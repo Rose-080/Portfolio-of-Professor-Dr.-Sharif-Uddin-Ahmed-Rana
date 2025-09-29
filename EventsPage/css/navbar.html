@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Navigation Menu Preview</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+</head>
+<body>
+
+    <header class="mb-4 w-full bg-black pt-10 pb-4 px-4 md:px-8 flex justify-between items-center relative z-50">
+        
+        <a href="#" class="flex items-center">
+            <img 
+                src="logo.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a>
+
+        <nav class="navigation"> 
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                        </span>
+                        <span class="text">Projects</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="text">Events</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Publications</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="nav.js"> </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
