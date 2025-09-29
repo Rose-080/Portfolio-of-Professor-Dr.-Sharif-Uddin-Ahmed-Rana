@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Navigation Menu Preview</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+</head>
+<body>
+
+    <header class="mb-4 w-full bg-black pt-10 pb-4 px-4 md:px-8 flex justify-between items-center relative z-50">
+        
+        <a href="#" class="flex items-center">
+            <img 
+                src= "img/logo.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a>
+
+        <nav class="navigation"> 
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                        </span>
+                        <span class="text">Projects</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="text">Events</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Publications</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 relative">
+
+    <!-- Left Side: Text Content -->
+    <div class="hero-text md:w-1/2 mb-12 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            Research & Development Projects
+        </h1>
+        <!-- Long horizontal line -->
+        <div class="line mb-6"></div>
+        <p class="text-lg md:text-xl mb-8 text-white">
+            Explore innovative solutions and cutting-edge research shaping the future of technology.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">
+                Explore Projects
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Side: Dr. Sharif Uddin Ahmed Rana Image -->
+    <div class="hero-image md:w-1/2 flex justify-center relative">
+        <img src="img/sari.png" alt="Dr. Sharif Uddin Ahmed Rana" class="w-full max-w-sm rounded-lg shadow-lg">
+    </div>
+
+</section>
+
+
+<section class="about-section w-full bg-black text-white py-20 px-6 md:px-16 text-center relative">
+    
+    <!-- Header -->
+    <h2 class="about-heading text-4xl md:text-5xl font-extrabold mb-4">
+        Architect of Innovation & Sustainable Futures
+    </h2>
+    <!-- Short horizontal line -->
+    <div class="about-line mx-auto mb-8"></div>
+    
+    <!-- Description text -->
+    <p class="about-text text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        Dr. Sharif Uddin Ahmed Rana is a visionary researcher and innovator specializing in AI, renewable energy, climate solutions, and sustainable urban development. His R&D initiatives include solar-powered transit systems, climate adaptation strategies, talent and economic research, and AI-driven software applications, all designed to transform research into real-world, impactful solutions.
+    </p>
+    
+</section>
+
+<section class="projects-section w-full bg-black text-white py-20 px-6 md:px-16">
+    
+    <!-- Section Title -->
+    <h2 class="projects-heading text-4xl md:text-5xl font-extrabold mb-4 text-center">
+        Research & Development Projects
+    </h2>
+
+    <!-- Intro Paragraph -->
+    <p class="projects-intro text-center text-lg md:text-xl mb-12 text-white/80 max-w-3xl mx-auto">
+        Explore innovative research initiatives and cutting-edge development projects led by Dr. Sharif Uddin Ahmed Rana, shaping the future of technology, sustainability, and urban mobility. Each project highlights a unique focus, role, and impact.
+    </p>
+
+    <div class="projects-line mx-auto mb-12"></div>
+
+    <!-- Project Card 1: Logo Left -->
+    <div class="project-glass flex flex-col md:flex-row items-start md:items-start gap-8 p-6 rounded-xl mb-8">
+        <!-- Left: Logo -->
+        <div class="project-left md:w-1/3 flex justify-center items-center">
+            <img src="img/solar skyways logo horizontal-01.avif" alt="Solar SkyWays Logo" class="w-40 h-40 rounded-md shadow-lg">
+        </div>
+
+        <!-- Right: Content -->
+        <div class="project-right md:w-2/3 flex flex-col justify-start items-start md:items-start">
+            <h3 class="project-name text-2xl font-bold mb-4">Solar SkyWays – Elevated Solar Transit</h3>
+            <div class="project-detail mb-3"><span class="detail-label">Role:</span><span class="detail-text">Director of Research, Innovation and Growth</span></div>
+            <div class="project-detail mb-3"><span class="detail-label">Timeline:</span><span class="detail-text">July 2024 – Present</span></div>
+            <div class="project-detail mb-3"><span class="detail-label">Focus:</span><span class="detail-text">Development of solar-powered transit solutions, emphasizing system design, operational efficiency, and strategic expansion for sustainable urban mobility.</span></div>
+            <a href="https://www.solarskyways.com" target="_blank" class="project-btn">Visit Website</a>
+        </div>
+    </div>
+
+  <!-- Way Group Project Card: Mirrored -->
+<div class="project-glass flex flex-col md:flex-row-reverse items-start md:items-start gap-8 p-6 rounded-xl mb-8">
+    
+    <!-- Right: Logo -->
+    <div class="project-left md:w-1/3 flex justify-center items-center">
+        <img src="img/w-logo.png" alt="Way Group Logo" class="w-40 h-40 rounded-md shadow-lg">
+    </div>
+
+    <!-- Left: Content -->
+    <div class="project-right md:w-2/3 flex flex-col justify-start items-start md:items-start">
+        <h3 class="project-name text-2xl font-bold mb-4">
+            Way Group – GTBIRC Research and Innovation
+        </h3>
+
+        <!-- Role -->
+        <div class="project-detail mb-3">
+            <span class="detail-label">Role:</span>
+            <span class="detail-text">CEO, Research and Innovation</span>
+        </div>
+
+        <!-- Timeline -->
+        <div class="project-detail mb-3">
+            <span class="detail-label">Timeline:</span>
+            <span class="detail-text">Dec 2022 – Present</span>
+        </div>
+
+        <!-- Focus -->
+        <div class="project-detail mb-3">
+            <span class="detail-label">Focus:</span>
+            <span class="detail-text">
+                Leading research, supervising students, securing funding, and enhancing faculty development.
+            </span>
+        </div>
+
+        <!-- Website Button -->
+        <a href="https://wayhousing.com" target="_blank" class="project-btn">
+            Visit Website
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+    <script src="JS/nav.js"> </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
