@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="nav.css">
+    <title>Contact Me | Portfolio</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
 
 
@@ -17,13 +17,72 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
    
 </head>
-<body>
+<body data-theme="dark">
+    <!-- Message Journey Animation -->
+    <div class="message-journey-container" id="messageJourney">
+        <div class="journey-overlay" id="journeyOverlay"></div>
+        
+        <!-- Paper Plane -->
+        <div class="paper-plane">
+            <i class="fas fa-paper-plane"></i>
+        </div>
+
+        <!-- Communication Nodes -->
+        <div class="communication-node node-1">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="communication-node node-2">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+        <div class="communication-node node-3">
+            <i class="fas fa-laptop-code"></i>
+        </div>
+
+        <!-- Signal Waves -->
+        <div class="signal-wave wave-1"></div>
+        <div class="signal-wave wave-2"></div>
+        <div class="signal-wave wave-3"></div>
+
+        <!-- Particle Trails -->
+        <div class="particle-trail trail-1"></div>
+        <div class="particle-trail trail-2"></div>
+        <div class="particle-trail trail-3"></div>
+        <div class="particle-trail trail-4"></div>
+
+        <!-- Mailbox -->
+        <div class="mailbox-icon">
+            <i class="fas fa-inbox"></i>
+        </div>
+
+        <!-- Delivered Checkmark -->
+        <div class="delivered-checkmark">
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <!-- Journey Text -->
+        <div class="journey-text">
+            <h2>Your Message Matters</h2>
+            <p>Let's Connect</p>
+        </div>
+    </div>
+
+    <!-- Background Particles -->
+    <div class="bg-particles">
+        <div class="particle" style="width: 60px; height: 60px; top: 10%; left: 15%; animation-delay: 0s;"></div>
+        <div class="particle" style="width: 40px; height: 40px; top: 60%; left: 80%; animation-delay: 2s;"></div>
+        <div class="particle" style="width: 80px; height: 80px; top: 30%; left: 70%; animation-delay: 4s;"></div>
+        <div class="particle" style="width: 50px; height: 50px; top: 80%; left: 20%; animation-delay: 6s;"></div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon theme-toggle-icon" id="themeIcon"></i>
+    </button>
  <!-- Navigation -->
     <header class="mb-4 w-full bg-black pt-10 pb-4 px-4 md:px-8 flex justify-between items-center relative z-50">
         
@@ -106,7 +165,7 @@
         <div class="bento-grid">
             <!-- Contact Information -->
             <div class="bento-item contact-info">
-                <h2 class="mx-auto" style="font-size: 1.8rem; margin-bottom: 30px; font-weight: 600; color: #ffffff;">Contact Information</h2>
+                <h2 class="contact-head" style="font-size: 1.8rem; margin-bottom: 30px; font-weight: 600; text-align: center;">Contact Information</h2>
                 <div class="w-full lg:w-[100%] h-2 bg-[var(--orange)] mb-8"></div>
                 
                 <div class="contact-item">
@@ -119,7 +178,9 @@
                 <div class="contact-item">
                     <div class="contact-label">Phone</div>
                     <div class="contact-value">
-                        <a href="tel:+1 669 265-9671,tel:+880 1814-692153">+1 669 265-9671, +880 1814-692153</a>
+                        <a href="tel:+1 669 265-9671">+1 669 265-9671</a><br>
+                        <a href="tel:+880 1814-692153">+880 1814-692153</a>
+
                     </div>
                 </div>
 
@@ -158,8 +219,8 @@
             </div>
 
             <!-- Image Box -->
-            <div class="bento-item image-box">
-                <div class="image-container order-first order-lg-last">
+            <div class="bento-item image-box order-first order-lg-last">
+                <div class="image-container">
                     <img src="Dr.Sharif Uddin Ahmed Rana.png" alt="Dr.Sharif's image">
                     <div class="image-overlay">
                         <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 10px; color: #ffffff;">DR.SHARIF UDDIN AHMED RANA</h3>
@@ -312,6 +373,7 @@
         </footer>   
 
      <script src="contact.js"> </script>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
