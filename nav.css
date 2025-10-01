@@ -17,10 +17,6 @@
 
         .navigation {
             position: relative;
-            /* FIX 1: Increased total width to 420px (6 items * 70px/item) */
-            /* <!-- width: 420px; 
-            height: 70px;  --> */
-            /* background: linear-gradient(45deg, var(--c-accent), white); */
             display: flex;
             justify-content: center;
             align-items: center;
