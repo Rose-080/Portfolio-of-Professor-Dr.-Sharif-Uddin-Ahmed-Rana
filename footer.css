@@ -1,0 +1,282 @@
+/*
+|--------------------------------------------------------------------------
+| CSS RESET: CRITICAL FIX FOR FULL-WIDTH/GAPS
+|--------------------------------------------------------------------------
+| This removes default browser margins and ensures sections take 100% width.
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Set the *entire page* background to a dark color to prevent white flash */
+    background-color: #090A0F; /* Use the dark base color from your previous context */
+    box-sizing: border-box; 
+}
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+
+
+/* -------------------------------------------------------------
+| Your Provided Styles - Adjusted for seamlessness and coherence
+|-------------------------------------------------------------- */
+
+.new_footer_area {
+    /* Full width fix is already done by the reset, but this color is important */
+    background: #070707; 
+    width: 100%; /* Ensure it spans edge-to-edge */
+    position: relative;
+    z-index: 10;
+    
+    /* 🔥 FIX: Aggressively overlap the section above to hide any white seams/gaps */
+    margin-top: -3px; 
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 310px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------
+| SVG Wave / Background Image Fixes (Based on your new structure)
+|-------------------------------------------------------------- */
+
+/* The footer_bg element contains the wave and animation */
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    /* FIX: The background color of the image area should match the .new_footer_area */
+    background: #070707 url("footer.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 226px;
+    /* 🔥 CRITICAL FIX: Add this to ensure the dark color fills the gaps */
+    background-color: #070707; 
+}
+
+/* ... (All other styles remain the same) ... */
+
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    /* TEXT: #7f88a6 (light blue-gray) -> #99a5c4 (Soft Gray/Gold) */
+    color: #99a5c4; 
+    padding: 27px 0px;
+}
+
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    /* TEXT: #6a7695 (medium blue-gray) -> #8a96b5 (Medium Gray/Gold) */
+    color: #484b54; 
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    /* HOVER: #5e2ced (Blue-Purple) -> #ff6600 (Orange Accent) */
+    color: #ff6600; 
+}
+
+.btn_get:hover {
+    color: #fff;
+    /* HOVER BG/BORDER: #6754e2 (Purple) -> #e05c00 (Darker Orange) */
+    background: #e05c00; 
+    border-color: #e05c00; 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    /* LINK HOVER: #5e2ced (Blue-Purple) -> #ff6600 (Orange Accent) */
+    color: #ff6600; 
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: rgb(37, 37, 37);
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    /* ICON COLOR: #858da8 (Blue-Gray) -> #a0a8bf (Soft Gray) */
+    color: #fefefe; 
+    display: inline-block;
+    background: rgb(37, 37, 37);;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+/* Toggles not modified as they are character codes */
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* BUTTON BG/BORDER: #5e2ced (Blue-Purple) -> #ff6600 (Orange Accent) */
+    background: #ff6600; 
+    border-color: #ff6600; 
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    /* HOVER COLOR: #5e2ced (Blue-Purple) -> #ff6600 (Orange Accent) */
+    color: #ff6600; 
+}
+
+.new_footer_top .f_social_icon a:hover {
+    /* ICON HOVER BG/BORDER: #5e2ced (Blue-Purple) -> #ff6600 (Orange Accent) */
+    background: #ff6600; 
+    border-color: #ff6600; 
+    color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    /* TITLE COLOR: #263b5e (Dark Blue-Gray) -> #f0f0f0 (Soft White) */
+    color: #f0f0f0; 
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    /* HEADING COLOR: #4b505e (Medium Blue-Gray) -> #f0f0f0 (Soft White) */
+    color: #f0f0f0; 
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    /* LINK COLOR: #6a7695 (Medium Blue-Gray) -> #8a96b5 (Medium Gray/Gold) */
+    color: #4c4e54; 
+}
+
+/* Animations and footer_bg are repeated but preserved */
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    
+    /* 1. CRITICAL CHANGE: Change 'center 0' to position the image at the bottom */
+    background: #070707 url("footer.png") no-repeat scroll center bottom;
+    
+    width: 100%;
+    height: 325px; /* The total height of the container */
+    
+    /* 2. Keep the scaling to ensure it covers the full width */
+    background-size: 100% auto; 
+    
+    /* The color is now set by the shorthand, no need for background-color: #070707; */
+}
+
+/* ... (footer_bg_one, footer_bg_two, and keyframes remain unchanged) ... */
+/* ... (footer_bg_one, footer_bg_two, and keyframes remain unchanged) ... */
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat scroll center 0;
+    width: 330px;
+    height: 105px;
+    
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+

@@ -33,34 +33,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar styling */
-.navbar {
-    background-color: var(--c-black);
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--c-dark-grey);
-    z-index: 20;
-}
-
-.navbar .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--c-white);
-    margin-left: 1rem;
-}
-
-.navbar .nav-link {
-    color: var(--c-white);
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 1.5rem;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover, .navbar .nav-link.active {
-    color: var(--c-accent);
-}
-
 /* Hero section styling */
 .hero-section {
     position: relative;
@@ -166,6 +138,7 @@ body {
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 /* Publication card styling */
@@ -305,13 +278,3 @@ body {
     100% { transform: translateY(-50%); }
 }
 
-/* Footer styling */
-footer {
-    background-color: var(--c-dark-grey);
-    color: var(--c-white);
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
