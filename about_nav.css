@@ -18,8 +18,8 @@
         .navigation {
             position: relative;
             /* FIX 1: Increased total width to 420px (6 items * 70px/item) */
-            <!-- width: 420px; 
-            height: 70px;  -->
+            width: 420px; 
+            height: 70px; 
             background: linear-gradient(45deg, var(--c-accent), white);
             display: flex;
             justify-content: center;
@@ -152,3 +152,38 @@
         .navigation ul li:nth-child(6).active~.indicator {
             transform: translateX(calc(70px * 5)); 
         }
+@keyframes gradient-x {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 8s ease infinite;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .animate-fade-up {
+    animation: fade-up 1s ease forwards;
+  }
+  .animate-fade-up.delay-100 {
+    animation-delay: 0.2s;
+  }
+  .animate-fade-up.delay-200 {
+    animation-delay: 0.4s;
+  }
+  .container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
