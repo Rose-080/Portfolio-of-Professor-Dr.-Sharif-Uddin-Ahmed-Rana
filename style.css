@@ -135,6 +135,8 @@ html, body {
             padding-bottom: 10px;
             background: linear-gradient(135deg, #f5af19, #f12711);
             -webkit-background-clip: text;
+            background-clip
+            : text;
             -webkit-text-fill-color: transparent;
         }
         
