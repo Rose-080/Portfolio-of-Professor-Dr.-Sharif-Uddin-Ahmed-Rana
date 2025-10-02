@@ -24,14 +24,14 @@
       background: #ff6600;
       margin-bottom: 10rem;
       width: 1100px;
-      overflow-block: auto; 
+      overflow-block: auto; /* you can make this wider for a longer accent */
     }
     .black-line {
       height: 5px;
       background: #ff6600;
       margin-top: 2rem;
       width: 1100px;
-      overflow-block: auto; 
+      overflow-block: auto; /* you can make this wider for a longer accent */
     }
 
 
