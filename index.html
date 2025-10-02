@@ -1,30 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home </title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Navigation Menu Preview</title>
+    <link rel="stylesheet" href="css/nav.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/r&d.css">
+   <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-  <header>
-    <h1>Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="project.html">Project</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="events.html">Events</a>
-      <a href="publication.html">Publications</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Home Page</h2>
-    <p>This is the homepage managed by <strong>Rozy Sultana</strong>.</p>
-  </main>
+  <header class="mb-4 w-full bg-black pt-10 pb-4 px-4 md:px-8 flex justify-between items-center relative z-50">
+        
+        <a href="#" class="flex items-center">
+            <img 
+                src= "img/logo.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a>
 
-  <footer>
-    <p>&copy; BASILISK FANGS</p>
-  </footer>
+        <nav class="navigation"> 
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                        </span>
+                        <span class="text">Projects</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="text">Events</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Publications</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header> 
+
+    <section class="hero-section w-full bg-black text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 relative">
+
+    <!-- Left Side: Text Content -->
+    <div class="hero-text md:w-1/2 mb-12 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            Research & Development Projects
+        </h1>
+        <!-- Long horizontal line -->
+        <div class="line mb-6"></div>
+        <p class="text-lg md:text-xl mb-8 text-white">
+            Explore innovative solutions and cutting-edge research shaping the future of technology.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="project-btn">
+                Explore Projects
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Side: Dr. Sharif Uddin Ahmed Rana Image -->
+    <div class="hero-image md:w-1/2 flex justify-center relative">
+        <img src="img/sari.png" alt="Dr. Sharif Uddin Ahmed Rana" class="w-full max-w-sm rounded-lg shadow-lg">
+    </div>
+
+</section>
+
+
+<section class="about-section w-full bg-black text-white py-20 px-6 md:px-16 text-center relative">
+    
+    <!-- Header -->
+    <h2 class="about-heading text-4xl md:text-5xl font-extrabold mb-4">
+        Architect of Innovation & Sustainable Futures
+    </h2>
+   <!-- Animated Divider -->
+    <div class="software-line mx-auto mb-12"></div>
+    
+    <!-- Description text -->
+    <p class="about-text text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        Dr. Sharif Uddin Ahmed Rana is a visionary researcher and innovator specializing in AI, renewable energy, climate solutions, and sustainable urban development. His R&D initiatives include solar-powered transit systems, climate adaptation strategies, talent and economic research, and AI-driven software applications, all designed to transform research into real-world, impactful solutions.
+    </p>
+    
+</section>
+
+<!-- Research & Development Projects -->
+<section class="projects-section w-full bg-black text-white py-20 px-6 md:px-16">
+    
+    <!-- Section Title -->
+    <h2 class="projects-heading text-4xl md:text-5xl font-extrabold mb-4 text-center">
+        Transforming Ideas into Impact.
+    </h2>
+    <!-- Animated Divider -->
+    <div class="software-line mx-auto mb-12"></div>
+
+    <!-- Intro Paragraph -->
+    <p class="projects-intro text-center text-lg md:text-xl mb-12 text-white/80 max-w-3xl mx-auto">
+        Explore innovative research initiatives and cutting-edge development projects led by Dr. Sharif Uddin Ahmed Rana, shaping the future of technology, sustainability, and urban mobility. Each project highlights a unique focus, role, and impact.
+    </p>
+    <br>
+
+    <div class="projects-line mx-auto mb-12"></div>
+
+    <!-- Project Card 1: Logo Left -->
+    <div class="project-glass flex flex-col md:flex-row items-start md:items-start gap-8 p-6 rounded-xl mb-8">
+        <!-- Left: Logo -->
+        <div class="project-left md:w-1/3 flex justify-center items-center">
+            <img src="img/solar skyways logo horizontal-01.avif" alt="Solar SkyWays Logo" class="w-40 h-40 rounded-md shadow-lg">
+        </div>
+
+        <!-- Right: Content -->
+        <div class="project-right md:w-2/3 flex flex-col justify-start items-start md:items-start">
+            <h3 class="project-name text-2xl font-bold mb-4">Solar SkyWays – Elevated Solar Transit</h3>
+            <div class="project-detail mb-3"><span class="detail-label">Role:</span><span class="detail-text">Director of Research, Innovation and Growth</span></div>
+            <div class="project-detail mb-3"><span class="detail-label">Timeline:</span><span class="detail-text">July 2024 – Present</span></div>
+            <div class="project-detail mb-3"><span class="detail-label">Focus:</span><span class="detail-text">Development of solar-powered transit solutions, emphasizing system design, operational efficiency, and strategic expansion for sustainable urban mobility.</span></div>
+            <a href="https://www.solarskyways.com" target="_blank" class="project-btn">Visit Website</a>
+        </div>
+    </div>
+
+  <!-- Way Group Project Card: Mirrored -->
+<div class="project-glass flex flex-col md:flex-row-reverse items-start md:items-start gap-8 p-6 rounded-xl mb-8">
+    
+    <!-- Right: Logo -->
+    <div class="project-left md:w-1/3 flex justify-center items-center">
+        <img src="img/w-logo.png" alt="Way Group Logo" class="w-40 h-40 rounded-md shadow-lg">
+    </div>
+
+    <!-- Left: Content -->
+    <div class="project-right md:w-2/3 flex flex-col justify-start items-start md:items-start">
+        <h3 class="project-name text-2xl font-bold mb-4">
+            Way Group – GTBIRC Research and Innovation
+        </h3>
+
+        <!-- Role -->
+        <div class="project-detail mb-3">
+            <span class="detail-label">Role:</span>
+            <span class="detail-text">CEO, Research and Innovation</span>
+        </div>
+
+        <!-- Timeline -->
+        <div class="project-detail mb-3">
+            <span class="detail-label">Timeline:</span>
+            <span class="detail-text">Dec 2022 – Present</span>
+        </div>
+
+        <!-- Focus -->
+        <div class="project-detail mb-3">
+            <span class="detail-label">Focus:</span>
+            <span class="detail-text">
+                Leading research, supervising students, securing funding, and enhancing faculty development.
+            </span>
+        </div>
+
+        <!-- Website Button -->
+        <a href="https://wayhousing.com" target="_blank" class="project-btn">
+            Visit Website
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- Research & Innovation (Software) Section -->
+<section class="software-section w-full bg-black text-white py-20 px-6 md:px-16">
+    
+    <!-- Headline -->
+    <h2 class="software-heading text-4xl md:text-5xl font-extrabold mb-6 text-center">
+        AI-Driven Learning Software <br> 
+       
+    </h2>
+    
+    <!-- Animated Divider -->
+    <div class="software-line mx-auto mb-12"></div>
+
+    <!-- Content Layout -->
+    <div class="software-content flex flex-col md:flex-row items-center justify-between gap-10">
+        
+        <!-- Left Side: Text -->
+        <div class="software-text md:w-1/2 leading-relaxed">
+            <p class="text-lg md:text-xl mb-6 fade-up">
+                I have written numerous <span class="font-semibold text-orange-400">software applications</span> 
+                for my students’ online exercises using the 
+                <span class="highlighted">PartyRock</span> platform.
+            </p>
+            <p class="text-base md:text-lg text-gray-300 fade-up">
+                These tools are designed to enhance interactive learning, 
+                foster creativity, and make technical exercises more engaging 
+                and accessible for learners worldwide.
+            </p>
+        </div>
+
+        <!-- Right Side: Logo & Link -->
+        <div class="software-logo md:w-1/2 flex flex-col items-center fade-up">
+            <img src="https://partyrock.aws/favicon.ico" 
+                 alt="PartyRock Logo" 
+                 class="w-24 h-24 mb-4 drop-shadow-lg animate-bounce-slow">
+            <a href="https://partyrock.aws/apps" target="_blank" 
+               class="project-btn">
+               Visit PartyRock
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PartyRock Workflow Section -->
+<section class="workflow-section w-full bg-black text-white py-20 px-6 md:px-16">
+
+    <!-- Heading -->
+   <!-- Heading -->
+<h2 class="workflow-heading text-3xl md:text-4xl font-extrabold mb-10 text-center">
+    How <span class="partyrock-gradient">PartyRock</span> Works
+</h2>
+
+<!-- Animated Divider -->
+    <div class="software-line mx-auto mb-12"></div>
+
+    <!-- Flow Container -->
+    <div class="workflow-container flex flex-col md:flex-row items-center justify-center gap-8 relative">
+
+        <!-- Step 1 -->
+        <div class="workflow-step fade-in">
+            <div class="workflow-circle">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+            </div>
+            <h3 class="workflow-title">Input</h3>
+            <p class="workflow-text">Students enter their exercise prompt or dataset.</p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="workflow-arrow hidden md:block">➝</div>
+
+        <!-- Step 2 -->
+        <div class="workflow-step fade-in" style="animation-delay:0.3s;">
+            <div class="workflow-circle">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <h3 class="workflow-title">AI Processing</h3>
+            <p class="workflow-text">PartyRock’s AI engine generates interactive activities.</p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="workflow-arrow hidden md:block">➝</div>
+
+        <!-- Step 3 -->
+        <div class="workflow-step fade-in" style="animation-delay:0.6s;">
+            <div class="workflow-circle">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+            </div>
+            <h3 class="workflow-title">Output</h3>
+            <p class="workflow-text">Students receive customized, engaging learning tools.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Software Cards Section -->
+<section id="projects" class="software-cards-section bg-black text-white py-20 px-6 md:px-16">
+  <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">
+    AI-Driven Learning Software
+  </h2>
+<!-- Animated Divider -->
+    <div class="software-line mx-auto mb-12"></div>
+  <div class="cards-container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <div class="software-card">
+  <div class="card-icon"><i class="bi bi-laptop"></i></div>
+  <h3 class="card-title">DailyRituals</h3>
+  <p class="card-text">Daily exercise app for students to track and manage routines.</p>
+  
+  <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+</div>
+
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-bar-chart-line"></i></div>
+      <h3 class="card-title">Lending Impact Analysis App</h3>
+      <p class="card-text">Analyzes student loan or lending impact for research purposes.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-camera-reels"></i></div>
+      <h3 class="card-title">Drone Management Application</h3>
+      <p class="card-text">Controls and monitors drones for educational or research projects.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-bank"></i></div>
+      <h3 class="card-title">Digital Banking Assistant</h3>
+      <p class="card-text">AI assistant for digital banking exercises and tutorials.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-chat-left-text"></i></div>
+      <h3 class="card-title">Conversational Legal Assistant</h3>
+      <p class="card-text">Helps students simulate legal advice conversations.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightbulb"></i></div>
+      <h3 class="card-title">Idea Boat Generator</h3>
+      <p class="card-text">Generates project ideas and brainstorming exercises for students.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-people"></i></div>
+      <h3 class="card-title">Industry-Academy Relationship Management</h3>
+      <p class="card-text">Facilitates collaboration between students and industry projects.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-radioactive"></i></div>
+      <h3 class="card-title">X-Ray Imaging Diagnostic Assistant</h3>
+      <p class="card-text">Assists in learning diagnostic imaging with X-Ray datasets.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-radioactive"></i></div>
+      <h3 class="card-title">X-Ray Imaging LLM Application</h3>
+      <p class="card-text">Leverages AI for X-Ray image analysis and learning exercises.</p><!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+      <h3 class="card-title">Tesla Remote Energy Transmission Assistant</h3>
+      <p class="card-text">Simulates remote energy transfer exercises using Tesla concepts.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-book"></i></div>
+      <h3 class="card-title">Language Learning Assistant</h3>
+      <p class="card-text">AI tool for personalized language exercises and training.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightning"></i></div>
+      <h3 class="card-title">Tesla Valve LLM Application</h3>
+      <p class="card-text">Learning tool for fluid dynamics and Tesla valve simulation.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-gear"></i></div>
+      <h3 class="card-title">Tesla Oscillator LLM Application</h3>
+      <p class="card-text">Simulates Tesla oscillators for research and learning purposes.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+      <h3 class="card-title">Powerless Power Transmission App</h3>
+      <p class="card-text">Educational simulation of wireless power transmission.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightning"></i></div>
+      <h3 class="card-title">Tesla Turbine LLM App</h3>
+      <p class="card-text">Simulates Tesla turbine mechanics for student experiments.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-broadcast"></i></div>
+      <h3 class="card-title">Radio Remote Control Remote</h3>
+      <p class="card-text">AI-assisted remote control simulation exercises.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-hammer"></i></div>
+      <h3 class="card-title">Induction Monitoring Application</h3>
+      <p class="card-text">Monitors induction experiments for teaching purposes.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+      <h3 class="card-title">Tesla Coil LLM App</h3>
+      <p class="card-text">Simulates Tesla coil exercises for students.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-lightning"></i></div>
+      <h3 class="card-title">AC Power System Analysis Application</h3>
+      <p class="card-text">Assists students in AC power system analysis and learning.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-book"></i></div>
+      <h3 class="card-title">Measurement & Design Application</h3>
+      <p class="card-text">Tool for measurement, design, and technical exercises.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-clipboard"></i></div>
+      <h3 class="card-title">Agri Measure</h3>
+      <p class="card-text">Application for agricultural measurement and monitoring exercises.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-building"></i></div>
+      <h3 class="card-title">Real Estate Construction Design App</h3>
+      <p class="card-text">AI tool for designing construction projects for students.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-heart-pulse"></i></div>
+      <h3 class="card-title">Diabetes Tracker</h3>
+      <p class="card-text">Simulates patient data tracking for learning purposes.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-bar-chart"></i></div>
+      <h3 class="card-title">Feasibility Study Analysis Assistant</h3>
+      <p class="card-text">Helps students simulate feasibility study and impact analysis.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+    <div class="software-card">
+      <div class="card-icon"><i class="bi bi-robot"></i></div>
+      <h3 class="card-title">Generative AI</h3>
+      <p class="card-text">AI-based tool to generate content, exercises, and solutions.</p>
+      <!-- Visiting Button -->
+  <a href="#projects" class="project-btn mt-4 inline-block">
+    Explore 
+  </a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <a href="#" class="flex items-center">
+            <img 
+                src="img/logo.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a> <br>
+                                
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">More Details</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Publications</a></li>
+                                    <li><a href="#">Books</a></li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term &amp; conditions</a></li>
+                                    <li><a href="#">Reporting</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Reach Out</h3>
+                                <div class="f_social_icon">
+    
+
+    <a href="#" class="icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© 2025 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made by team Basilisk Fangs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+ 
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
