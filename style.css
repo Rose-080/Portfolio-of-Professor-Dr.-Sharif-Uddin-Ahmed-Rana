@@ -166,7 +166,6 @@ html, body {
             font-size: 32px;
             color: var(--c-accent);
         }
-        
         .story-section {
             margin-bottom: 150px;
             position: relative;
@@ -750,3 +749,4 @@ html, body {
     ::-webkit-scrollbar-thumb:hover {
       background: var(--c-accent-light);
     }
+    
