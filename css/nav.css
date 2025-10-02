@@ -1,0 +1,189 @@
+ :root {
+            --c-accent: #ff6600;  
+            --bg-color: #000;
+        }
+        
+        body {
+            background-color: #000;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* ---------------------------------------------------------------------- */
+        /* MAGIC NAVIGATION MENU CSS (FIXED for 6 Items)                          */
+        /* ---------------------------------------------------------------------- */
+
+        .navigation {
+            position: relative;
+            /* FIX 1: Increased total width to 420px (6 items * 70px/item) */
+            width: 420px; 
+            height: 70px; 
+            background: linear-gradient(45deg, var(--c-accent), white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .navigation ul {
+            display: flex;
+            /* FIX 2: List width set to 420px to hold all items */
+            width: 420px; 
+            margin: 0;
+            padding: 0;
+        }
+        .navigation ul li {
+            position: relative;
+            /* FIX 3: Item width set to 70px (420px / 6 = 70px) */
+            width: 70px; 
+            height: 70px;
+            list-style: none;
+            z-index: 1;
+        }
+        .navigation ul li a {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+        }
+        .navigation ul li a .icon {
+            position: relative;
+            display: block;
+            line-height: 75px;
+            font-size: 1.5em;
+            text-align: center;
+            color: #fff;
+            transition: .5s;
+        }
+        .navigation ul li.active a .icon {
+            transform: translateY(-32px);
+        }
+        .navigation ul li a .text {
+            position: absolute;
+            color: #fff;
+            font-weight: 400;
+            font-size: .75em;
+            letter-spacing: .05em;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: .5s;
+        }
+        .navigation ul li.active a .text {
+            opacity: 1;
+            transform: translateY(10px);
+        }
+        .navigation ul li a .circle {
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-radius: 50%;
+            border: 1.8px solid #fff;
+            transform: translateY(-37px) scale(0);
+        }
+        .navigation ul li.active a .circle {
+            transition: .5s;
+            transition-delay: .5s;
+            transform: translateY(-37px) scale(1);
+        }
+        
+        /* FIX 4: Corrected Indicator width and logic */
+        .indicator {
+            position: absolute;
+            top: -50%;
+            /* Removed extra 'px' and set to match item width/height for a perfect circle */
+            width: 70px; 
+            height: 70px;
+            
+            background: var(--c-accent); /* Orange color */
+            border: 6px solid var(--bg-color); /* Black border */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+        .indicator::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -22px;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border-top-right-radius: 20px;
+            box-shadow: 1px -10px 0 var(--bg-color);
+        }
+        .indicator::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -22px;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border-top-left-radius: 20px;
+            box-shadow: -1px -10px 0 var(--bg-color);
+        }
+
+        /* FIX 5: Updated translateX movement for 6 items, 70px per step */
+        .navigation ul li:nth-child(1).active~.indicator {
+            transform: translateX(calc(70px * 0)); 
+        }
+        .navigation ul li:nth-child(2).active~.indicator {
+            transform: translateX(calc(70px * 1)); 
+        }
+        .navigation ul li:nth-child(3).active~.indicator {
+            transform: translateX(calc(70px * 2)); 
+        }
+        .navigation ul li:nth-child(4).active~.indicator {
+            transform: translateX(calc(70px * 3)); 
+        }
+        .navigation ul li:nth-child(5).active~.indicator {
+            transform: translateX(calc(70px * 4)); 
+        }
+        /* Rule for the 6th item */
+        .navigation ul li:nth-child(6).active~.indicator {
+            transform: translateX(calc(70px * 5)); 
+        }
+@keyframes gradient-x {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 8s ease infinite;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .animate-fade-up {
+    animation: fade-up 1s ease forwards;
+  }
+  .animate-fade-up.delay-100 {
+    animation-delay: 0.2s;
+  }
+  .animate-fade-up.delay-200 {
+    animation-delay: 0.4s;
+  }
+  .container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
