@@ -54,17 +54,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
-
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-progress" id="scrollProgress"></div>
+  </div>
 
  <!-- Navigation -->
-
-
-    <!-- Fixed Header/Navigation with Logo -->
-    <header class="mb-4 w-full bg-black pt-10 pb-0 px-4 md:px-8 flex justify-between items-center relative z-50">
+    <header id="navbar" class="mb-4 w-full bg-black pt-10 px-4 md:px-8 flex justify-between items-center relative z-50">
         
         <a href="#" class="flex items-center">
             <img 
-                src="logo.png" 
+                src="img_m/logo.png" 
                 alt="Dr. Sharif Uddin Ahmed Rana Logo" 
                 class="w-[150px] h-[64px]" 
                 />
@@ -73,8 +74,8 @@
 
         <nav class="navigation"> 
             <ul>
-                <li class="list active">
-                    <a href="index.html">
+                <li class="list">
+                    <a href="">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -83,7 +84,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="project.html">
+                    <a href="">
                         <span class="icon">
                             <ion-icon name="folder-open-outline"></ion-icon>
                         </span>
@@ -91,8 +92,8 @@
                         <span class="circle"></span>
                     </a>
                 </li>
-                <li class="list">
-                    <a href="event.html">
+                <li class="list active">
+                    <a href="">
                         <span class="icon">
                             <ion-icon name="calendar-outline"></ion-icon>
                         </span>
@@ -101,7 +102,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="publication.html">
+                    <a href="">
                         <span class="icon">
                             <ion-icon name="book-outline"></ion-icon>
                         </span>
@@ -110,7 +111,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="contact.html">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="mail-outline"></ion-icon>
                         </span>
@@ -119,7 +120,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="about.html">
+                    <a href="">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -131,14 +132,6 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-<body>
-  <!-- Scroll Progress Indicator -->
-  <div class="scroll-indicator">
-    <div class="scroll-progress" id="scrollProgress"></div>
-  </div>
-      
     <script src="css_m/nav.js"></script>
 
   <section id="hero" class="hero py-20" style="padding-top: 140px; position: relative;">
