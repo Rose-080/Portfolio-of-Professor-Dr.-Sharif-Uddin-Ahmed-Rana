@@ -48,7 +48,7 @@ html, body {
     position: absolute;
     bottom: 0;
     /* FIX: The background color of the image area should match the .new_footer_area */
-    background: #070707 url("footer.png") no-repeat scroll center 0;
+    background: #070707 url("footer_j.png") no-repeat scroll center 0;
     width: 100%;
     height: 226px;
     /* 🔥 CRITICAL FIX: Add this to ensure the dark color fills the gaps */
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     
     /* 1. CRITICAL CHANGE: Change 'center 0' to position the image at the bottom */
-    background: #070707 url("footer.png") no-repeat scroll center bottom;
+    background: #070707 url("footer_j.png") no-repeat scroll center bottom;
     
     width: 100%;
     height: 325px; /* The total height of the container */
@@ -279,4 +279,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*************footer End*****************/
+
 
