@@ -1,0 +1,185 @@
+/*
+|--------------------------------------------------------------------------
+| CSS RESET: CRITICAL FIX FOR FULL-WIDTH/GAPS
+|--------------------------------------------------------------------------
+| This removes default browser margins and ensures sections take 100% width.
+| We use !important on margin/padding to override Bootstrap's defaults.
+*/
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    /* Set the *entire page* background to prevent white flash */
+    background: radial-gradient(ellipse at bottom, #101010 0%, #020202 100%);
+    box-sizing: border-box; 
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+}
+
+/* ... (Your other global styles and theme setup remain the same) ... */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --c-black: #000000;
+    --c-white: #ffffff;
+    --c-accent: #ff6600; /* The required orange */
+    --c-dark-grey: #1a1a1a;
+    --c-light-grey: #2e2e2e;
+    
+    /* Variables used in the hero's HTML/background gradient */
+    --c-lighter-bg: #1a1a1a; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Use a dark background to blend with the star field base */
+    background-color: #090A0F; 
+    color: var(--c-white);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* ===================================== */
+/* 2. Custom Typography & Scale */
+/* ===================================== */
+.massive-text {
+    font-size: clamp(4rem, 16vw, 15rem);
+    line-height: 0.9;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+/* ===================================== */
+/* 3. Star Background (Parallax Effect) */
+/* ===================================== */
+
+html {
+    height: 100%;
+    /* Star Field Background Gradient (Dark space) */
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+/* ===================================== */
+/* 4. Hero-Specific Overlap & FIXES */
+/* ===================================== */
+#hero {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 10rem;
+    
+    /* CRITICAL FIX: Increased padding-bottom significantly to prevent overlap */
+    /* This pushes the next section down to account for the massive text block */
+    padding-bottom: 20rem; 
+    
+    z-index: 1; /* Ensure content stacks correctly */
+}
+
+.avatar-placeholder {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--c-dark-grey);
+    border: 4px solid var(--c-accent);
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    z-index: 10;
+    box-shadow: 0 0 40px rgba(255, 102, 0, 0.4);
+    transform: scale(0.9);
+    transition: transform 0.5s ease-out;
+}
+
+/* ===================================== */
+/* 5. Section & Element Overflows & FIXES */
+/* ===================================== */
+.content-container {
+    max-width: 1400px;
+    
+    /* Set margin to a small, consistent value for separation */
+    margin: 3rem auto 0 auto; /* Reduced from 10rem to 5rem */
+    
+    /* Reduced vertical padding (5rem = 80px is quite large) */
+    padding: 3rem 2rem; /* Reduced from 5rem to 3rem */
+    position: relative;
+    z-index: 5;
+}
+
+/* Floating Orange Circle (used in About and Publications) */
+.floating-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--c-accent);
+    opacity: 0.5;
+    filter: blur(50px);
+    z-index: 0;
+    pointer-events: none;
+}
+.force-underline {
+    text-decoration: underline !important;
+    text-underline-offset: 0.7ex !important;
+}
+/* Orange Line Overflow for Book Section */
+.overflow-line-container {
+    position: relative;
+}
+.overflow-line {
+     position: absolute;
+      
+    /* Change positioning to anchor to the bottom left of its container */
+    top: auto;      /* Remove the old vertical positioning */
+    bottom: 0;      /* Anchor to the bottom edge */
+           /* Anchor to the left edge */
+    
+    /* 🔥 CRITICAL FIX 1: Swap width and height for a horizontal line */
+    width: 50%;   /* Use 100vw (viewport width) to ensure it reaches the absolute edge */
+    height: 2px;    /* Set the thickness of the horizontal line */
+    
+    background-color: var(--c-accent);
+    z-index: 10;    /* Ensure it sits above other elements */
+}
+.hero-spacer {
+    /* Set height to the absolute minimum needed to clear the line of text */
+    height: 10px; 
+    width: 100%;
+    position: relative; 
+    z-index: 1; 
+    background-color: transparent; 
+}
+/* ---------------------------------------------------------------------- */
+/* CRITICAL FIX: SPACER ELEMENT FOR HERO OVERLAP */
+/* ---------------------------------------------------------------------- */
+
+/* ===================================== */
+/* 6. Black Theorem Animation Setup */
+/* ===================================== */
+@keyframes scroll-text {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); } 
+}
+.scrolling-list-container {
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid var(--c-dark-grey);
+    /* Creates a fading effect at the top/bottom */
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent); 
+}
+.scrolling-list {
+    animation: scroll-text 10s linear infinite;
+}
+.scrolling-list:hover {
+    animation-play-state: paused;
+}
+
