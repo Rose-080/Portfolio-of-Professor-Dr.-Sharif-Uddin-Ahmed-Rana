@@ -1,30 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact US</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav_f.css">
+    <link rel="stylesheet" href="footer_f.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
 </head>
-<body>
-  <header>
-    <h1>Contact US</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="project.html">Project</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="event.html">Events</a>
-      <a href="publication.html">Publications</a>
-    </nav>
-  </header>
+<body data-theme="dark">
+    <!-- Message Journey Animation -->
+    <div class="message-journey-container" id="messageJourney">
+        <div class="journey-overlay" id="journeyOverlay"></div>
+        
+        <!-- Paper Plane -->
+        <div class="paper-plane">
+            <i class="fas fa-paper-plane"></i>
+        </div>
 
-  <main>
-    <h2>Contact</h2>
-    <p>This page will be developed by <strong>Fatima</strong>.</p>
-  </main>
+        <!-- Communication Nodes -->
+        <div class="communication-node node-1">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="communication-node node-2">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+        <div class="communication-node node-3">
+            <i class="fas fa-laptop-code"></i>
+        </div>
 
-  <footer>
-    <p>&copy; BASILISK FANGS</p>
-  </footer>
+        <!-- Signal Waves -->
+        <div class="signal-wave wave-1"></div>
+        <div class="signal-wave wave-2"></div>
+        <div class="signal-wave wave-3"></div>
+
+        <!-- Particle Trails -->
+        <div class="particle-trail trail-1"></div>
+        <div class="particle-trail trail-2"></div>
+        <div class="particle-trail trail-3"></div>
+        <div class="particle-trail trail-4"></div>
+
+        <!-- Mailbox -->
+        <div class="mailbox-icon">
+            <i class="fas fa-inbox"></i>
+        </div>
+
+        <!-- Delivered Checkmark -->
+        <div class="delivered-checkmark">
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <!-- Journey Text -->
+        <div class="journey-text">
+            <h2>Your Message Matters</h2>
+            <p>Let's Connect</p>
+        </div>
+    </div>
+
+    <!-- Background Particles -->
+    <div class="bg-particles">
+        <div class="particle" style="width: 60px; height: 60px; top: 10%; left: 15%; animation-delay: 0s;"></div>
+        <div class="particle" style="width: 40px; height: 40px; top: 60%; left: 80%; animation-delay: 2s;"></div>
+        <div class="particle" style="width: 80px; height: 80px; top: 30%; left: 70%; animation-delay: 4s;"></div>
+        <div class="particle" style="width: 50px; height: 50px; top: 80%; left: 20%; animation-delay: 6s;"></div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon theme-toggle-icon" id="themeIcon"></i>
+    </button>
+ <!-- Navigation -->
+   <header class="mb-4 w-full bg-black pt-10 pb-4 px-4 md:px-8 flex justify-between items-center relative z-50">
+        
+        <a href="index.html" class="flex items-center">
+            <img 
+                src="logo_f.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a>
+
+        <nav class="navigation"> 
+            <ul>
+                <li class="list">
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="project.html">
+                        <span class="icon">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                        </span>
+                        <span class="text">Projects</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="event.html">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="text">Events</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="publication.html">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Publications</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="contact.html">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="about.html">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="nav_f.js"></script>
+
+    <div class="container-wrapper">
+        <h1 class="section-title">CONTACT</h1>
+        <div class="w-full lg:w-[100%] h-2 bg-[var(--orange)] mb-8"></div>
+        <p style="color: #888; font-size: 1.1rem; animation: fadeInDown 0.8s ease;">We'd love to hear from you. Reach out and we'll respond as soon as possible.</p>
+
+        <div class="bento-grid">
+            <!-- Contact Information -->
+            <div class="bento-item contact-info">
+                <h2 class="contact-head" style="font-size: 1.8rem; margin-bottom: 30px; font-weight: 600; text-align: center;">Contact Information</h2>
+                <div class="w-full lg:w-[100%] h-2 bg-[var(--orange)] mb-8"></div>
+                
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:suahmedrana@gmail.com">suahmedrana@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">
+                        <a href="tel:+1 669 265-9671">+1 669 265-9671</a><br>
+                        <a href="tel:+880 1814-692153">+880 1814-692153</a>
+
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">Address</div>
+                    <div class="contact-value">
+                        Bangladesh<br>USA (Remote global engagement)
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label">Follow Us</div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sharif-uddin-ahmed-rana-89b79733/" target="_blank" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@wteforum1212" target="_blank" class="social-icon">
+                                    <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://orcid.org/0000-0003-2296-6044" target="_blank" class="social-icon">
+                                    <i class="fab fa-orcid"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=USV8l0YAAAAJ&hl=en" target="_blank" class="social-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Dr-Ahmed-Rana" target="_blank" class="social-icon">
+                                    <i class="fab fa-researchgate"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <button class="get-in-touch-btn" id="openModalBtn">
+                    <span>Get In Touch</span>
+                </button>
+            </div>
+
+            <!-- Image Box -->
+            <div class="bento-item image-box order-first order-lg-last">
+                <div class="image-container">
+                    <img src="Dr.Sharif Uddin Ahmed Rana.png" alt="Dr.Sharif's image">
+                    <div class="image-overlay">
+                        <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 10px; color: #ffffff;">DR.SHARIF UDDIN AHMED RANA</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+            <h2 style="font-size: 2rem; margin-bottom: 10px; font-weight: 600; color: #ffffff;">Send us a Message</h2>
+            <p style="color: #888; margin-bottom: 30px;">Fill out the form below and we'll get back to you shortly.</p>
+            
+            <form id="contactForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="Your Number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" placeholder="How can we help?" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-textarea" placeholder="Tell us more about your inquiry..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                </button>
+            </form>
+        </div>
+    </div>
+<!-- Footer -->
+    <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <a href="#" class="flex items-center">
+            <img 
+                src="logo_f.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a> <br>
+                                
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">More Details</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Publications</a></li>
+                                    <li><a href="#">Books</a></li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term &amp; conditions</a></li>
+                                    <li><a href="#">Reporting</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Reach Out</h3>
+                                <div class="f_social_icon">
+                                    <a href="https://www.facebook.com/suahmedrana/" class="icon" target="_blank">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/sharif-uddin-ahmed-rana-89b79733/" class="icon">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© 2025 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made by team Basilisk Fangs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>   
+
+     <script src="contact.js"> </script>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
