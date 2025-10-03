@@ -2,29 +2,959 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css_m/nav_m.css">
+  <link rel="stylesheet" href="./css_m/footer_m.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style_m.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS - Animate On Scroll -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script_m.js"></script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Particles.js -->
+  <!-- Remove duplicate particles.js inclusion -->
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+  
+  <!-- AOS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Events</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="project.html">Project</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="events.html">Events</a>
-      <a href="publication.html">Publications</a>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-progress" id="scrollProgress"></div>
+  </div>
+
+ <!-- Navigation -->
+    <header class="mb-4 w-full bg-black pt-10 pb-4 px-4 md:px-8 flex justify-between items-center relative z-50">
+        
+    <a href="home.html" class="flex items-center">
+        <img 
+            src="logo.png" 
+            alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+            class="w-[150px] h-[64px]" 
+        />
+        <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+    </a>
+
+    <nav class="navigation"> 
+        <ul>
+            <li class="list active">
+                <a href="home.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="project.html">
+                    <span class="icon">
+                        <ion-icon name="folder-open-outline"></ion-icon>
+                    </span>
+                    <span class="text">Projects</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="events.html">
+                    <span class="icon">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </span>
+                    <span class="text">Events</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="publications.html">
+                    <span class="icon">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </span>
+                    <span class="text">Publications</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="contact.html">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="about.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">About</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
     </nav>
-  </header>
+</header>
+    <script src="css_m/nav.js"></script>
 
-  <main>
-    <h2>Events</h2>
-    <p>This page will be developed by <strong>Mahiya</strong></p>
-  </main>
+  <section id="hero" class="hero py-20" style="padding-top: 140px; position: relative;">
+  <!-- Particles Background -->
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+  
+  <!-- Your existing content -->
+  <div class="container mx-auto px-6 text-center" style="position: relative; z-index: 10;">
+    <img src="img_m/profile.png" alt="Dr. Sharif Uddin Ahmed Rana" class="profile-image w-40 h-40 rounded-full mx-auto mb-8 floating pulse">
+    <h1 class="hero-title text-5xl md:text-6xl font-bold mb-4">Dr. Sharif Uddin Ahmed Rana</h1>
+    <div class="text-xl text-gray-300 mb-6">
+      <span class="badge bg-gradient-primary me-2 px-3 py-2">International Speaker</span>
+      <span class="badge bg-gradient-primary me-2 px-3 py-2">Academic Researcher</span>
+      <span class="badge bg-gradient-primary me-2 px-3 py-2">Innovation Strategist</span>
+    </div>
+    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-8">
+      Leading expert in Knowledge Economy, AI in Market Research, Smart Cities, and Sustainable Development.
+      Bridging the gap between cutting-edge technology and practical implementation through international collaboration and research.
+    </p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <button class="btn btn-primary">View Speaking Topics</button>
+      <button class="btn btn-outline-light">Download CV</button>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; BASILISK FANGS</p>
-  </footer>
+<!-- Add particles.js library -->
+
+
+  <!-- Statistics Overview -->
+  <section id="stats" class="py-16 bg-gradient-to-r from-gray-900 to-gray-800">
+    <div class="container mx-auto px-6">
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="stats-number">50+</div>
+          <p class="text-gray-300">International Conferences</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="stats-number">25+</div>
+          <p class="text-gray-300">Countries Reached</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="stats-number">100+</div>
+          <p class="text-gray-300">Workshop Sessions</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="stats-number">1000+</div>
+          <p class="text-gray-300">Students Mentored</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entrepreneurial Ventures -->
+  <section id="ventures">
+
+    <div class="story-container">
+      <div class="chapter-opener">
+        <div>
+          <h1 data-aos="fade-down" data-aos-duration="1000">The Journey</h1>
+          <p class="chapter-subtitle" data-aos="fade-up" data-aos-delay="200">
+            "Every great venture begins with a vision. Mine started in 2020, when I decided to build platforms that would connect talent, innovation, and opportunity across borders."
+          </p>
+          
+          <div class="stats-grid">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="stat-number counter" data-target="2020">2020</div>
+              <div class="stat-label">Journey Started</div>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="stat-number counter" data-target="3">3</div>
+              <div class="stat-label">Organizations</div>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="stat-number">600</div>
+              <div class="stat-label">Global Reach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Story 1: WTE Forum -->
+<div class="story-section">
+  <div class="story-layout">
+    <div class="story-text" data-aos="fade-right" data-aos-duration="1000">
+      <div class="chapter-number">01</div>
+      <h2 class="story-title">World Talent Economy Forum</h2>
+      <div class="story-year">
+        <i class="fas fa-calendar-alt"></i> Established 2020
+      </div>
+      <div class="decorative-line"></div>
+      
+      <p class="story-narration" data-aos="fade-up" data-aos-delay="200">
+        "It started with a simple question: How can we create meaningful dialogue between the world's brightest minds? The answer became WTE Forum a global platform where academics, entrepreneurs, and policymakers converge to shape the future of talent."
+      </p>
+      
+      <div class="story-details">
+        <div class="detail-section" data-aos="fade-up" data-aos-delay="300">
+          <div class="detail-title">
+            <i class="fas fa-rocket"></i>
+            What We Built
+          </div>
+          <ul class="detail-list">
+            <li>Global videocasts and expert panels reaching thousands worldwide</li>
+            <li>Programs like <span class="highlight">Centers of Excellence</span> and <span class="highlight">Innovation Lab</span></li>
+            <li>A bridge connecting students, universities, and global experts</li>
+          </ul>
+        </div>
+        
+        <div class="detail-section" data-aos="fade-up" data-aos-delay="400">
+          <div class="detail-title">
+            <i class="fas fa-heart"></i>
+            The Impact
+          </div>
+          <ul class="detail-list">
+            <li>Fostered collaboration across continents</li>
+            <li>Launched <span class="highlight">WTEFI South Asia Center of Excellence</span> in 2025</li>
+            <li>Created pathways for thousands to access global opportunities</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="story-links" data-aos="fade-up" data-aos-delay="500">
+        <a href="https://wteforum.org" target="_blank" class="story-link">
+          <i class="fas fa-globe"></i>
+          Visit WTE Forum
+        </a>
+        <a href="https://wtefi.org" target="_blank" class="story-link">
+          <i class="fas fa-university"></i>
+          WTEFI Institute
+        </a>
+      </div>
+    </div>
+    
+    <div class="story-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop" alt="WTE Forum">
+      <div class="image-caption">
+        World Talent Economy Forum - Connecting Global Minds
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Story 2: The Way Group -->
+<div class="story-section">
+  <div class="story-layout reverse">
+    <div class="story-text" data-aos="fade-left" data-aos-duration="1000">
+      <div class="chapter-number">02</div>
+      <h2 class="story-title">The Way Group</h2>
+      <div class="story-year">
+        <i class="fas fa-building"></i> Global Incubation Centre
+      </div>
+      <div class="decorative-line"></div>
+      
+      <p class="story-narration" data-aos="fade-up" data-aos-delay="200">
+        "Every entrepreneur needs a guiding hand. The Way Group was born from this belief a sanctuary where startups could find mentorship, resources, and the courage to transform ideas into reality."
+      </p>
+      
+      <div class="story-details">
+        <div class="detail-section" data-aos="fade-up" data-aos-delay="300">
+          <div class="detail-title">
+            <i class="fas fa-lightbulb"></i>
+            What We Built
+          </div>
+          <ul class="detail-list">
+            <li>Comprehensive research and incubation programs</li>
+            <li>Mentorship ecosystem for startups and students</li>
+            <li>Focus on <span class="highlight">sustainable development</span> and talent management</li>
+          </ul>
+        </div>
+        
+        <div class="detail-section" data-aos="fade-up" data-aos-delay="400">
+          <div class="detail-title">
+            <i class="fas fa-heart"></i>
+            The Impact
+          </div>
+          <ul class="detail-list">
+            <li>Empowered countless entrepreneurs to take their first steps</li>
+            <li>Featured in global fellowship programs</li>
+            <li>Built bridges between research and real-world application</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="story-links" data-aos="fade-up" data-aos-delay="500">
+        <a href="https://tando.org/fellow-directory/sharif-uddin-ahmed-rana/" target="_blank" class="story-link">
+          <i class="fas fa-award"></i>
+          Fellowship Profile
+        </a>
+      </div>
+    </div>
+    
+    <div class="story-image" data-aos="fade-right" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop" alt="The Way Group">
+      <div class="image-caption">
+        The Way Group - Nurturing Tomorrow's Entrepreneurs
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Story 3: Innovation Lab -->
+<div class="story-section">
+  <div class="story-layout">
+    <div class="story-text" data-aos="fade-right" data-aos-duration="1000">
+      <div class="chapter-number">03</div>
+      <h2 class="story-title">Innovation Lab</h2>
+      <div class="story-year">
+        <i class="fas fa-flask"></i> Innovation Hub
+      </div>
+      <div class="decorative-line"></div>
+      
+      <p class="story-narration" data-aos="fade-up" data-aos-delay="200">
+        "Innovation doesn't happen in isolation. The Innovation Lab became our playground a space where curious minds, bold ideas, and collaborative spirit converge to create the impossible."
+      </p>
+      
+      <div class="story-details">
+        <div class="detail-section" data-aos="fade-up" data-aos-delay="300">
+          <div class="detail-title">
+            <i class="fas fa-cogs"></i>
+            What We Built
+          </div>
+          <ul class="detail-list">
+            <li>Incubation hub for SMEs, students, and researchers</li>
+            <li>Integrated programs with <span class="highlight">WTEFI activities</span></li>
+            <li>Collaborative workspace for breakthrough innovation</li>
+          </ul>
+        </div>
+        
+        <div class="detail-section" data-aos="fade-up" data-aos-delay="400">
+          <div class="detail-title">
+            <i class="fas fa-heart"></i>
+            The Impact
+          </div>
+          <ul class="detail-list">
+            <li>Catalyzed innovation through events and workshops</li>
+            <li>Strong partnerships with universities</li>
+            <li>Empowered the next generation of innovators</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="story-links" data-aos="fade-up" data-aos-delay="500">
+        <a href="https://wtefi.org" target="_blank" class="story-link">
+          <i class="fas fa-link"></i>
+          Explore Programs
+        </a>
+      </div>
+    </div>
+    
+    <div class="story-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop" alt="Innovation Lab">
+      <div class="image-caption">
+        Innovation Lab - Where Ideas Come to Life
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+  
+
+  <!-- Featured Conferences -->
+  <section id="conferences" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="section-heading">Featured Conferences & Speaking Engagements</h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="event-card">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-success">International Conference</span>
+              <span class="text-muted small">Oct 2023</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">EAI Tes-TECH 2023 — Nikola Tesla Technologies</h3>
+            <p class="text-sm text-gray-400 mb-3">24–26 Oct 2023 • International Conference • Keynote Speaker</p>
+            <p class="text-gray-300 mb-4">Explored Tesla-inspired innovations, automated transport, and renewable energy for future economies. Presented groundbreaking research on decentralized energy systems and their impact on sustainable urban development.</p>
+            <div class="d-flex gap-2 mb-4">
+              <span class="badge bg-outline-primary">Tesla Technologies</span>
+              <span class="badge bg-outline-primary">Renewable Energy</span>
+              <span class="badge bg-outline-primary">Future Transport</span>
+            </div>
+            <a href="https://pausetheworldforpeace.org/2023/06/28/we-speak-to-dr-sharif-uddin-ahmed-rana-eai-tes-tech-2023-eai-international-conference-on-advances-in-nikolatesla-technologies-in-the-twenty-first-century/" target="_blank" class="btn btn-outline-primary">View Conference Details →</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="event-card">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-info">Virtual Event</span>
+              <span class="text-muted small">Feb 2023</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Virtual Enlightenment Salon — U.S. Transhumanist Party</h3>
+            <p class="text-sm text-gray-400 mb-3">26 Feb 2023 • Online Global Event • Featured Speaker</p>
+            <p class="text-gray-300 mb-4">Led engaging discussion on Nikola Tesla–inspired technologies, future transport systems, and decentralized energy networks. Addressed over 500 global participants on the intersection of technology and human advancement.</p>
+            <div class="d-flex gap-2 mb-4">
+              <span class="badge bg-outline-info">Transhumanism</span>
+              <span class="badge bg-outline-info">Future Tech</span>
+              <span class="badge bg-outline-info">Innovation</span>
+            </div>
+            <a href="https://m.facebook.com/events/1527171054476981/?active_tab=about" target="_blank" class="btn btn-outline-info">View Event Details →</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="event-card">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-warning">Panel Discussion</span>
+              <span class="text-muted small">Nov 2023</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">AI in Smart Cities Summit 2023</h3>
+            <p class="text-sm text-gray-400 mb-3">Dubai, UAE • International Summit • Panel Moderator</p>
+            <p class="text-gray-300 mb-4">Moderated high-level panel on AI integration in urban planning, featuring city mayors, tech leaders, and policy makers from 15 countries.</p>
+            <div class="d-flex gap-2 mb-4">
+              <span class="badge bg-outline-warning">Smart Cities</span>
+              <span class="badge bg-outline-warning">Urban AI</span>
+              <span class="badge bg-outline-warning">Policy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="event-card">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="badge bg-danger">Research Presentation</span>
+              <span class="text-muted small">Sep 2023</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Knowledge Economy Forum — Harvard Business School</h3>
+            <p class="text-sm text-gray-400 mb-3">Boston, USA • Academic Conference • Research Presenter</p>
+            <p class="text-gray-300 mb-4">Presented research findings on AI-driven market research methodologies and their impact on emerging economies in South Asia.</p>
+            <div class="d-flex gap-2 mb-4">
+              <span class="badge bg-outline-danger">Knowledge Economy</span>
+              <span class="badge bg-outline-danger">Market Research</span>
+              <span class="badge bg-outline-danger">AI Applications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="media-section">
+    <!-- Featured Video Section -->
+    <div id="featuredSection" class="mb-5 p-4 border border-secondary rounded-3" style="background: rgba(255, 102, 0, 0.05);">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="video-container">
+            <iframe id="featuredVideo" 
+                    src="https://www.youtube.com/embed/DtRhbbkn64E" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-3 mt-lg-0">
+          <span id="featuredBadge" class="badge bg-secondary mb-2">Featured</span>
+          <h3 id="featuredTitle" class="h4 mb-3">Future of AI in Education — Panel Debate</h3>
+          <p id="featuredMeta" class="text-muted">International Education Summit 2023 • 2.5K+ views</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expanded Content Placeholder -->
+    <div id="expandedContent" class="expanded-content"></div>
+
+    <!-- Media Grid -->
+    <div class="media-grid-container">
+      <div class="row g-4" id="mediaGrid">
+        <div class="col-md-6 col-lg-4">
+          <div class="border border-secondary rounded-3 p-4 h-100 media-card" 
+               style="cursor: pointer;" 
+               data-video="https://www.youtube.com/embed/DtRhbbkn64E"
+               data-title="Future of AI in Education — Panel Debate"
+               data-meta="International Education Summit 2023 • 2.5K+ views"
+               data-badge="Featured">
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <div class="flex-shrink-0 rounded-2 p-3" style="width: 56px; height: 56px; background: rgba(255, 102, 0, 0.1); border: 1px solid rgba(255, 102, 0, 0.3);">
+                <span class="d-block text-center fw-bold" style="color: var(--c-accent); font-size: 14px; line-height: 30px;">AI</span>
+              </div>
+              <div class="flex-grow-1">
+                <span class="badge bg-secondary mb-2">Panel Debate</span>
+              </div>
+            </div>
+            <h5 class="h6 mb-2">Future of AI in Education</h5>
+            <p class="text-gray-300 mb-3">International panel discussing AI's transformative role in educational systems</p>
+            <p class="small text-muted mb-0">Jan 2023 • Video Discussion</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+  <div class="border border-secondary rounded-3 p-4 h-100 media-card" 
+       style="cursor: pointer;" 
+       data-video="https://www.youtube.com/embed/6oXYwdEFRvI?si=GleX7AysROaryjBK"
+       data-title="EAI Tes-TECH 2023 – EAI International Conference on Advances in Nikola Tesla Technologies"
+       data-meta="EAI Conference • Oct 24-26, 2023"
+       data-badge="Speaker">
+    <div class="d-flex align-items-start gap-3 mb-3">
+      <div class="flex-shrink-0 rounded-2 p-3" style="width: 56px; height: 56px; background: rgba(255, 102, 0, 0.1); border: 1px solid rgba(255, 102, 0, 0.3);">
+        <span class="d-block text-center fw-bold" style="color: var(--c-accent); font-size: 14px; line-height: 30px;">EAI</span>
+      </div>
+      <div class="flex-grow-1">
+        <span class="badge bg-secondary mb-2">Speaker</span>
+      </div>
+    </div>
+    <h5 class="h6 mb-2">EAI Tes-TECH 2023</h5>
+    <p class="text-gray-300 mb-3">Advances in Nikola Tesla technologies in the 21st century</p>
+    <p class="small text-muted mb-0">Oct 24-26, 2023 • Speaker</p>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+  <div class="border border-secondary rounded-3 p-4 h-100 media-card" 
+       style="cursor: pointer;" 
+       data-video="https://www.youtube.com/embed/7Jxwgilj-1Q?si=pHrQ0bJQiJ6jVvpl"
+       data-title="6th International Conference on Business & Economics at Dhaka University"
+       data-meta="Dhaka University Conference • 2023"
+       data-badge="Speaker">
+    <div class="d-flex align-items-start gap-3 mb-3">
+      <div class="flex-shrink-0 rounded-2 p-3" style="width: 56px; height: 56px; background: rgba(255, 102, 0, 0.1); border: 1px solid rgba(255, 102, 0, 0.3);">
+        <span class="d-block text-center fw-bold" style="color: var(--c-accent); font-size: 14px; line-height: 30px;">DU</span>
+      </div>
+      <div class="flex-grow-1">
+        <span class="badge bg-secondary mb-2">Speaker</span>
+      </div>
+    </div>
+    <h5 class="h6 mb-2">Dhaka University</h5>
+    <p class="text-gray-300 mb-3">6th International Conference on Business & Economics</p>
+    <p class="small text-muted mb-0">2023 • Speaker</p>
+  </div>
+</div>
+      </div>
+    </div>
+    
+
+    
+
+
+  <!-- Workshops & Training -->
+  <section id="workshops" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="section-heading">Workshops & Academic Mentoring</h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="event-card text-center">
+            <div class="mb-4">
+              <div class="bg-gradient-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                <span class="text-white fw-bold fs-4">MIT</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">MIT React Development Mentorship</h3>
+            <p class="text-gray-300 mb-4">Advanced mentoring program focusing on React development, innovation frameworks, and AI-driven applications for next-generation developers.</p>
+            <div class="mb-4">
+              <span class="badge bg-outline-primary me-2">React.js</span>
+              <span class="badge bg-outline-primary me-2">AI Integration</span>
+              <span class="badge bg-outline-primary">Innovation</span>
+            </div>
+            <p class="small text-gray-400">50+ Students Mentored • 6 Months Program</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="event-card text-center">
+            <div class="mb-4">
+              <div class="bg-gradient-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                <span class="text-white fw-bold fs-4">H</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Harvard CS50 Teaching Assistant</h3>
+            <p class="text-gray-300 mb-4">Mentored students on computer science fundamentals, algorithmic thinking, and practical applications in entrepreneurship and business development.</p>
+            <div class="mb-4">
+              <span class="badge bg-outline-success me-2">Computer Science</span>
+              <span class="badge bg-outline-success me-2">Algorithms</span>
+              <span class="badge bg-outline-success">Entrepreneurship</span>
+            </div>
+            <p class="small text-gray-400">100+ Students • Multiple Semesters</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="event-card text-center">
+            <div class="mb-4">
+              <div class="bg-gradient-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                <span class="text-white fw-bold fs-4">AI</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">AI Workshop Series</h3>
+            <p class="text-gray-300 mb-4">Comprehensive workshop series on artificial intelligence applications in market research, urban planning, and sustainable development strategies.</p>
+            <div class="mb-4">
+              <span class="badge bg-outline-warning me-2">Machine Learning</span>
+              <span class="badge bg-outline-warning me-2">Data Science</span>
+              <span class="badge bg-outline-warning">Applications</span>
+            </div>
+            <p class="small text-gray-400">200+ Participants • Monthly Sessions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="timeline">
+    <h2 class="section-heading">Career Timeline</h2>
+    
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2024 — PRESENT</div>
+          <div class="timeline-details">
+            <h3>International Research Strategist</h3>
+            <div class="accent-line"></div>
+            <p>Leading multi-national research initiatives on AI applications in emerging markets and sustainable urban development.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-details">
+            <h3>Global Conference Circuit</h3>
+            <div class="accent-line"></div>
+            <p>Featured speaker at 15+ international conferences across North America, Europe, and Asia-Pacific regions.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-details">
+            <h3>Academic Partnerships</h3>
+            <div class="accent-line"></div>
+            <p>Established mentorship programs with MIT and Harvard, focusing on innovation education and technology entrepreneurship.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-year">2021</div>
+          <div class="timeline-details">
+            <h3>Research Focus Expansion</h3>
+            <div class="accent-line"></div>
+            <p>Expanded research into knowledge economy frameworks and AI-driven market research methodologies for developing nations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section id="upcoming" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="section-heading">Upcoming Speaking Engagements</h2>
+      
+      <div class="row g-4 mt-8">
+        <div class="col-lg-4">
+          <div class="event-card">
+            <div class="badge bg-primary mb-3">Confirmed</div>
+            <h4 class="mb-3">Global AI Summit 2025</h4>
+            <p class="text-gray-400 mb-3">Singapore • March 2025</p>
+            <p class="text-gray-300">Keynote on "AI Ethics in Smart City Implementation"</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="event-card">
+            <div class="badge bg-warning mb-3">Pending</div>
+            <h4 class="mb-3">Sustainable Tech Conference</h4>
+            <p class="text-gray-400 mb-3">London • April 2025</p>
+            <p class="text-gray-300">Panel discussion on renewable energy integration</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="event-card">
+            <div class="badge bg-info mb-3">Planning</div>
+            <h4 class="mb-3">Innovation Workshop Series</h4>
+            <p class="text-gray-400 mb-3">Virtual • Ongoing 2025</p>
+            <p class="text-gray-300">Monthly workshops on emerging technologies</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12">
+        <h4 class="mb-4">Interested in hosting Dr. Rana at your event?</h4>
+        <button class="btn btn-primary me-3">Request Speaking Engagement</button>
+        <button class="btn btn-outline-light">Download Speaker Kit</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer start -->
+ <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <a href="#" class="flex items-center">
+            <img 
+                src="img_m/logo.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a> <br>
+                                
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">More Details</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Publications</a></li>
+                                    <li><a href="#">Books</a></li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term &amp; conditions</a></li>
+                                    <li><a href="#">Reporting</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Reach Out</h3>
+                                <div class="f_social_icon">
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a>
+                                    <a href="#" class="icon">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© 2025 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made by team Basilisk Fangs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+<!-- Footer end -->
+
+  
+
+
+  
+<script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+      offset: 100,
+      easing: 'ease-in-out'
+    });
+
+
+
+
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute('data-target'));
+          const duration = 2000;
+          const increment = target / (duration / 16);
+          let current = 0;
+
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              counter.textContent = Math.floor(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
+          updateCounter();
+          counterObserver.unobserve(counter);
+        }
+      });
+    }, observerOptions);
+
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // Media Card Click Handler
+    document.querySelectorAll('.media-card').forEach(card => {
+      card.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video');
+        const title = this.getAttribute('data-title');
+        const meta = this.getAttribute('data-meta');
+        const badge = this.getAttribute('data-badge');
+
+        const isExpanded = this.classList.contains('expanded');
+
+        // Remove expanded class from all cards
+        document.querySelectorAll('.media-card').forEach(c => c.classList.remove('expanded'));
+
+        if (!isExpanded) {
+          // Update featured video section
+          document.getElementById('featuredVideo').src = videoUrl;
+          document.getElementById('featuredTitle').textContent = title;
+          document.getElementById('featuredMeta').textContent = meta;
+          document.getElementById('featuredBadge').textContent = badge;
+
+          // Mark card as active
+          this.classList.add('expanded');
+
+          // Scroll to featured section smoothly
+          document.getElementById('featuredSection').scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'nearest' 
+          });
+        }
+      });
+    });
+
+    // GSAP Animations (if needed for additional effects)
+    if (typeof gsap !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Parallax effect on story images
+      gsap.utils.toArray('.story-image').forEach(image => {
+        gsap.to(image, {
+          scrollTrigger: {
+            trigger: image,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1
+          },
+          y: -30
+        });
+      });
+
+      // Animate chapter numbers with scale
+      gsap.utils.toArray('.chapter-number').forEach(number => {
+        gsap.from(number, {
+          scrollTrigger: {
+            trigger: number,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play none none reverse'
+          },
+          scale: 0.5,
+          opacity: 0,
+          duration: 1,
+          ease: 'back.out(1.7)'
+        });
+      });
+    }
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const navHeight = document.querySelector('.navbar').offsetHeight;
+          const targetPosition = target.offsetTop - navHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Refresh AOS on window resize
+    window.addEventListener('resize', () => {
+      AOS.refresh();
+    });
+  </script>  
+
 </body>
 </html>
