@@ -1,0 +1,597 @@
+
+
+ ////
+        /* Hero Section */
+
+
+.hero-section {
+    background-color: #000;
+    margin-top: 0;    /* remove top margin */
+    padding-top: 0;   /* remove top padding */
+}
+
+/* Hero H1 with Light Torch Sweep */
+.hero-text h1 {
+    position: relative;
+    font-size: 3rem; /* adjust size */
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(
+        120deg,
+        #ffffff 20%,
+        #ff6600 40%,
+        #ff8533 50%,
+        #ff6600 60%,
+        #ffffff 80%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: torchSweep 6s ease-in-out infinite;
+}
+
+/* Slow torch-like swoosh with circular motion */
+@keyframes torchSweep {
+    0% {
+        background-position: 200% 0%;
+    }
+    50% {
+        background-position: 0% 200%; /* diagonal circular sweep */
+    }
+    100% {
+        background-position: 200% 0%; /* back around */
+    }
+}
+
+
+.hero-text p {
+    color: #fff;
+}
+
+/* Animated horizontal line under heading (slow pulse) */
+.line {
+    height: 3px;
+    width: 850px; /* final length */
+    background: linear-gradient(90deg, #ff6600, #ff8533, #ffffff, #ff6600);
+    background-size: 300% 100%;
+    border-radius: 3px;
+    margin: 0 auto; /* keeps it centered */
+    animation: lineGrow 10s ease-in-out infinite, lineColor 15s linear infinite;
+}
+
+/* Width expansion & contraction loop */
+@keyframes lineGrow {
+    0%, 100% {
+        width: 200px; /* short state */
+    }
+    50% {
+        width: 850px; /* long state */
+    }
+}
+
+/* Moving gradient color sweep */
+@keyframes lineColor {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 300% center;
+    }
+}
+
+
+
+
+/* Image Styling */
+.hero-image img {
+    width: 100 px;
+    height: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px -8px rgba(255, 102, 0, 0.6);
+
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end; /* align image to right */
+    align-items: center;       /* vertically center in hero section */
+}
+/* Label over image */
+.image-label {
+    background-color: #fff;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Fade-in Animation */
+.hero-text, .hero-image {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.hero-text { animation-delay: 0.2s; }
+.hero-image { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 2rem;
+    }
+    .image-label {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
+
+/* About Section */
+.about-section {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem;
+}
+
+/* Header styling */
+.about-heading {
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.2s;
+}
+
+/* Short horizontal line */
+.about-line {
+    width: 80px;           
+    height: 2px;
+    background-color: #ff6600; /* orange line */
+    opacity: 0;
+    transform: scaleX(0);
+    animation: lineExpand 1s forwards;
+    animation-delay: 0.4s;
+    margin: 0 auto 2rem auto;
+}
+
+/* Paragraph text */
+.about-text {
+    color: #ccc;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.6s;
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineExpand {
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+
+
+
+
+/* Glass Container */
+.project-glass {
+    background: rgba(255, 255, 255, 0.05); /* glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    padding: 2rem;
+}
+
+/* Hover effect: lift + neon glow */
+.project-glass:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 0 20px rgba(255, 102, 0, 0.6),   /* soft glow */
+        0 0 40px rgba(255, 102, 0, 0.4),   /* medium glow */
+        0 0 60px rgba(255, 102, 0, 0.2);   /* outer faint glow */
+}
+
+
+/* Left Logo */
+.project-left img {
+    width: 900px;
+    height: 160px;
+    
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255,102,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.project-left img:hover {
+    transform: scale(1.05);
+}
+
+/* Right Column */
+.project-right {
+    color: #fff;
+}
+
+/* Title & Role */
+.project-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.project-role {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Timeline */
+.project-timeline {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+/* Focus */
+.project-focus {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+
+.project-glass.mirrored {
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* Section Styling */
+.software-section {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Heading */
+.software-heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s forwards;
+}
+
+/* Gradient divider */
+.software-line {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6600, #ff8533, #ffffff, #ff6600);
+    border-radius: 2px;
+    background-size: 300% 100%;
+    animation: lineColor 8s linear infinite;
+}
+
+/* Highlighted PartyRock text */
+.highlighted {
+    background: linear-gradient(90deg, #ff6600, #ff8533, #fff);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    animation: gradientMove 4s ease infinite;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+.fade-up:nth-child(1) { animation-delay: 0.2s; }
+.fade-up:nth-child(2) { animation-delay: 0.4s; }
+
+@keyframes gradientMove {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+@keyframes lineColor {
+    0% { background-position: 0% center; }
+    100% { background-position: 300% center; }
+}
+
+/* Slow bounce for logo */
+@keyframes bounceSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.animate-bounce-slow {
+    animation: bounceSlow 3s infinite;
+}
+
+
+/* project*/
+
+.partyrock-gradient {
+    background: linear-gradient(90deg, #ff6600, #ff8533, #ffffff);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+
+.workflow-section {
+    background-color: #000;
+    text-align: center;
+}
+
+/* Steps */
+.workflow-step {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
+    
+}
+.workflow-step:hover {
+    
+    border: 1px solid #ff6600;
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.7);
+}
+
+/* Step Circle with Icons */
+.workflow-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6600, #ff8533);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 4px 12px rgba(255,102,0,0.4);
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.workflow-step:hover .workflow-circle {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 132, 51, 0.9);
+}
+
+/* Titles */
+.workflow-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #ff6600, #ff8533, #fff);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    animation: gradientMove 4s ease infinite;
+}
+.workflow-text {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+/* Arrow */
+.workflow-arrow {
+    font-size: 2rem;
+    color: #ff6600;
+    animation: arrowPulse 1.5s infinite;
+}
+@keyframes arrowPulse {
+    0%, 100% { transform: translateX(0); opacity: 0.6; }
+    50% { transform: translateX(6px); opacity: 1; }
+}
+
+/* Fade-in steps */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.cards-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.software-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.3s ease, border 0.3s ease;
+    width: 100%; /* same width in grid */
+    height: 350px; /* uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.software-card:hover {
+    transform: translateY(-6px) rotateY(5deg) rotateX(3deg);
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.7);
+    border: 1px solid #ff6600;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #ff8533;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.software-card:hover .card-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.5;
+    flex-grow: 1; /* ensures text height uniform across cards */
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Button */
+.project-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(255, 102, 0, 0.2);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.project-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,102,0,0.3), rgba(255,102,0,0.1), rgba(255,102,0,0.3));
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+.project-btn:hover::before {
+    left: 100%;
+}
+
+.project-btn:hover {
+    border-color: #ff8533;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-glass {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-left, .project-right {
+        width: 100%;
+        text-align: center;
+    }
+    .project-left img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+
+/* Software Card Button */
+.sft-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.35rem 0.75rem; /* slightly smaller than project-btn */
+    font-size: 0.875rem;      /* smaller text for card */
+    font-weight: 600;
+    color: #fff;
+    background: rgba(255, 102, 0, 0.15); /* slightly lighter */
+    border: 2px solid #fff;
+    border-radius: 6px;        /* slightly smaller radius */
+    overflow: hidden;
+    transition: all 0.4s ease;
+    margin-top: 1rem;          /* spacing from text */
+   
+}
+
+
+
+
+/* Hover effect */
+.sft-btn:hover {
+    border-color: #ff8533;
+    transform: translateY(-1.5px); /* subtle lift */
+}
+.sft-btn, .project-btn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sft-btn:hover, .project-btn:hover {
+    color: #fff;  /* keeps color consistent */
+}
