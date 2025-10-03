@@ -61,11 +61,32 @@
   </div>
 
  <!-- Navigation -->
-    <header id="navbar" class="mb-4 w-full bg-black pt-10 px-4 md:px-8 flex justify-between items-center relative z-50">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR. Rana portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd4CjQ7wF76x19+3gWd26F7/T72Mv/8F3+e8l2J6z+pI9gL1A0aN4pE0x2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body>
+
+    <!-- Fixed Header/Navigation with Logo -->
+    <header class="mb-4 w-full bg-black pt-10 pb-0 px-4 md:px-8 flex justify-between items-center relative z-50">
         
         <a href="#" class="flex items-center">
             <img 
-                src="img_m/logo.png" 
+                src="logo.png" 
                 alt="Dr. Sharif Uddin Ahmed Rana Logo" 
                 class="w-[150px] h-[64px]" 
                 />
@@ -74,8 +95,8 @@
 
         <nav class="navigation"> 
             <ul>
-                <li class="list">
-                    <a href="">
+                <li class="list active">
+                    <a href="index.html">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -84,7 +105,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="">
+                    <a href="project.html">
                         <span class="icon">
                             <ion-icon name="folder-open-outline"></ion-icon>
                         </span>
@@ -92,8 +113,8 @@
                         <span class="circle"></span>
                     </a>
                 </li>
-                <li class="list active">
-                    <a href="">
+                <li class="list">
+                    <a href="event.html">
                         <span class="icon">
                             <ion-icon name="calendar-outline"></ion-icon>
                         </span>
@@ -102,7 +123,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="">
+                    <a href="publication.html">
                         <span class="icon">
                             <ion-icon name="book-outline"></ion-icon>
                         </span>
@@ -111,7 +132,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="contact.html">
                         <span class="icon">
                             <ion-icon name="mail-outline"></ion-icon>
                         </span>
@@ -120,7 +141,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="">
+                    <a href="about.html">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -132,6 +153,571 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+
+      
+        <!-- 1. HERO SECTION (Massive Text & Overlap) -->
+       <section id="hero" class="relative flex flex-col justify-start bg-black px-4 md:px-8 overflow-hidden pt-0 pb-0">
+
+    
+    
+    <div class="w-full max-w-7xl mx-auto pt-0 -mt-40">
+        
+        <div class="relative w-full lg:w-3/5 lg:ml-auto mb-0 mt-5 lg:mb-0 z-10 mt-0 lg:mt-0 lg:-mr-16">
+            
+            <div class="aspect-[4/5] w-full bg-gray-900 border-4 border-[var(--c-dark-grey)] shadow-2xl overflow-hidden">
+                <div class="flex items-center justify-center h-full text-white text-3xl opacity-50">
+                    <img src="rana-profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative w- z-20 mt-[-35%] md:mt-[-45%] lg:mt-[-55%] transform -translate-y-1/2">
+            <div class="max-w-7xl mx-auto">
+                
+                <h1 class="inline-block text-white text-7xl md:text-8xl lg:text-9xl xl:text-[4rem] font-extrabold tracking-widest uppercase mb-4 leading-none mt-0 ">
+                    <br><br> <br> Dr. Sharif Uddin <br>Ahmed Rana
+                </h1>
+                
+                <div class="w-full lg:w-[60%] h-2 bg-[var(--c-accent)] mb-8"></div>
+
+                <p class="text-white text-2xl md:text-5xl font-light tracking-wide max-w-xl mb-6">
+                    R&D Director, Innovator and Author
+                </p>
+
+                <a href="#contact" class="inline-block py-3 px-6 bg-[var(--c-accent)] text-white font-semibold uppercase tracking-wider rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</section>
+
+    <h2 class="text-6xl font-extrabold mb-2 border-b border-[var(--c-dark-grey)] pb-4"></h2> 
+
+        <!-- 2. ABOUT SECTION (Three Shaded Columns + Orange Circle) -->
+<section id="about" class="content-container relative pt-1 ">
+    
+    <h2 class="text-6xl font-extrabold mb-2  pb-4">Biography</h2> 
+    
+    <div class="absolute left-0 w-[400px] h-1 bg-[var(--c-accent)] z-10" 
+         style="top: 100px; transform: translateX(-1.5rem); mt-12"></div>
+    
+    <div class="mt-12"></div> 
+    
+    <div class="floating-circle top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+    
+    <div class="grid md:grid-cols-3 min-h-[500px]">
+        
+        <div class="p-8 bg-black z-10 border-r border-b border-[var(--c-dark-grey)]">
+            <p class="text-sm text-[var(--c-accent)] uppercase tracking-widest mb-4">PROFILE</p>
+            <h3 class="text-4xl font-bold mb-6"> Dr. Sharif Uddin Ahmed Rana</h3>
+            <p class="text-lg text-gray-300">
+                Ph.D. Researcher & Lecturer with MBA/BBA in Project Management, HRM & Marketing; 7+ years’ experience in corporate training, research, international project development, HR, digital marketing, startups, and academic program management.
+            </p>
+        </div>
+        
+        <div class="p-8 bg-[var(--c-dark-grey)] z-10 border-r border-b border-[var(--c-light-grey)]">
+            <p class="text-sm text-[var(--c-accent)] uppercase tracking-widest mb-4">FOCUS</p>
+            <ul class="text-lg space-y-3 text-gray-300">
+                
+    <li>Sustainable Energy &amp; Solar Innovation </li>
+    <li>Academic Leadership &amp; Teaching </li>
+    <li>Business Consulting &amp; Entrepreneurship </li>
+    <li>Digital Economy &amp; Data Science </li>
+    <li>Project Development &amp; Innovation </li>
+    <li>International Research &amp; Collaboration </li>
+    <li>Community &amp; Policy Engagement</li>
+    <li>Research, Writing &amp; Publication </li>
+    
+    
+  </ul>
+            
+        </div>
+
+        <div class="p-8 bg-[var(--c-light-grey)] z-10 flex flex-col justify-end border-b border-[var(--c-dark-grey)]">
+            <div class="h-[384px] mb-4 bg-zinc-700 flex items-center justify-center text-gray-400 text-sm">
+                <img src="rana-bio.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- 3. BLACK THEOREM SECTION (Animated Scroll List) -->
+        <section id="black-theorem" class="content-container">
+            <h2 class="text-6xl font-extrabold mb-12 border-b border-[var(--c-dark-grey)] pb-4 text-center">THE ITIHAS GOLD MEDAL</h2>
+            
+            <div class="grid md:grid-cols-5 gap-12">
+                <div class="md:col-span-2">
+                    <p class="text-xl leading-relaxed text-gray-300 mb-6">
+                        A recognition of lifetime achievement and exceptional contribution to historical research and academic excellence. This section tracks the award conferral and associated accolades.
+                    </p>
+                    <a href="about.html" class="inline-block text-[var(--c-accent)] font-semibold force-underline">
+                        LEARN MORE ABOUT THE AWARD &rarr;
+                    </a>
+                </div>
+
+                <!-- Scrolling Animated List Replica -->
+                <div class="md:col-span-3 scrolling-list-container">
+                    <ul class="scrolling-list space-y-3 text-sm text-gray-400 font-mono">
+                        
+    <li><strong>Award Name:</strong> Itihas Gold Medal</li>
+    <li><strong>Recipient:</strong> Dr. Sharif Uddin Ahmed Rana</li>
+    <li><strong>Year Awarded:</strong> 2022</li>
+    <li><strong>Reason:</strong> Recognized for lifetime achievement and outstanding contributions to historical research and academia.</li>
+    <li><strong>Significance:</strong> One of Bangladesh’s prestigious honors for scholars who have made remarkable impact in research, education, and knowledge dissemination.</li>
+    <li><strong>Importance:</strong> Highlights excellence in scholarship, reinforces credibility in academic and research communities, and celebrates contributions to preserving and promoting historical knowledge.</li>
+    <li><strong>Associated Honors:</strong> Often accompanied by citation, honorarium, and formal recognition at an award ceremony.</li>
+  
+                        <!-- Repeat content to ensure continuous animation -->
+                          <li><strong>Award Name:</strong> Itihas Gold Medal</li>
+    <li><strong>Recipient:</strong> Dr. Sharif Uddin Ahmed Rana</li>
+    <li><strong>Year Awarded:</strong> 2022</li>
+    <li><strong>Reason:</strong> Recognized for lifetime achievement and outstanding contributions to historical research and academia.</li>
+    <li><strong>Significance:</strong> One of Bangladesh’s prestigious honors for scholars who have made remarkable impact in research, education, and knowledge dissemination.</li>
+    <li><strong>Importance:</strong> Highlights excellence in scholarship, reinforces credibility in academic and research communities, and celebrates contributions to preserving and promoting historical knowledge.</li>
+    <li><strong>Associated Honors:</strong> Often accompanied by citation, honorarium, and formal recognition at an award ceremony.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. MY FIRST BOOK SECTION (Overflowing Orange Line) -->
+        <section id="book" class="content-container pt-20 pb-20 border-t border-[var(--c-dark-grey)] bg-[var(--c-dark-grey)]">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left: Text with Overflowing Line -->
+                <div class="overflow-line-container pr-8">
+                   
+                    <p class="text-sm text-[var(--c-accent)] uppercase tracking-widest mb-4 z-10 relative">BOOK RELEASE</p>
+                    <h3 class="text-5xl font-extrabold mb-6 z-10 relative">
+                        50 Years of Bangladesh: <span class="text-gray-400">A Tale of A Miracle.</span>
+                    </h3>
+                    <p class="text-lg text-gray-300 mb-8 z-10 relative">
+                        Since its inception in 1971, the account of Bangladeshas a country has been nothing short of a miracle.Within a mere 50 years, the country's journey hasturned its previous label as a "bottomless basket"around, giving way to an emerging "Asian Tiger" as itcurrently marches towards its goal of becomingdeveloped by 2041. The present book is a scholarlyendeavor to depict this astonishing tale of a dreamcome true, hoping that readers will find the book absorbing and thought provoking.
+                    </p>
+                    <a href="publication.html" class="inline-block text-[var(--c-accent)] font-semibold z-2 relative force-underline">
+    READ MORE BOOKS DR. RANA &rarr;
+</a>
+                       
+                </div>
+
+                <!-- Right: Image Placeholder -->
+                <div class="aspect-video bg-zinc-700 flex items-center justify-center text-gray-400 text-sm">
+    <img src="https://m.media-amazon.com/images/I/319eQzykqzL.jpg" alt="50 Years of Bangladesh: A Tale of a Miracle Book Cover" class="w-full h-full object-cover">
+</div>
+            </div>
+        </section>
+
+        <!-- 5. PUBLICATIONS SECTION (Orange Circle Overflow) -->
+        <section id="publications" class="content-container relative pt-20 pb-20">
+            <!-- The Floating Circle Element (Different position) -->
+            <div class="floating-circle top-10 right-10"></div>
+
+            <h2 class="text-6xl font-extrabold mb-12 border-b border-[var(--c-dark-grey)] pb-4">PUBLICATIONS</h2>
+             <div class="overflow-line absolute left-0  h-1 bg-[var(--c-accent)] z-10" 
+         style="top: 150px; transform: translateX(-1.5rem); mt-18"></div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left: Image Placeholder with Orange Circle Overflow -->
+                <div class="relative">
+                    <div class="aspect-square bg-zinc-700 flex items-center justify-center text-gray-400 text-sm">
+                        <img src="rana-pub.jpg" alt="">
+                    </div>
+                    <!-- Small Orange Circle Overflowing the image -->
+                    <div class="absolute w-20 h-20 rounded-full bg-[var(--c-accent)] -bottom-4 -right-4 z-10 opacity-70"></div>
+                </div>
+
+                <!-- Right: Publication List -->
+                <div class="space-y-6">
+                    <article class="border-b border-[var(--c-dark-grey)] pb-4">
+    <h3 class="text-2xl font-bold hover:text-[var(--c-accent)] cursor-pointer">Attention Mechanism Model Combined With Adversarial Learning for E-Commerce User Behavior Classification and Personality Recommendation</h3>
+    <p class="text-sm text-gray-500">The Economics of Talent Management and Human Capital, 2025</p>
+</article>
+<article class="border-b border-[var(--c-dark-grey)] pb-4">
+    <h3 class="text-2xl font-bold hover:text-[var(--c-accent)] cursor-pointer">Factors Influencing Glass Ceiling: Focus on Women Administration in Higher Education in Malaysia</h3>
+    <p class="text-sm text-gray-500">The Economics of Talent Management and Human Capital, 2025</p>
+</article>
+<article class="border-b border-[var(--c-dark-grey)] pb-4">
+    <h3 class="text-2xl font-bold hover:text-[var(--c-accent)] cursor-pointer">Agribusiness Innovation: A Pathway to Development in Bangladesh</h3>
+    <p class="text-sm text-gray-500">The Economics of Talent Management and Human Capital, 2025</p>
+</article>
+<article class="border-b border-[var(--c-dark-grey)] pb-4">
+    <h3 class="text-2xl font-bold hover:text-[var(--c-accent)] cursor-pointer">Factors influencing 'glass ceiling' theory on female administrative people in Malaysia</h3>
+    <p class="text-sm text-gray-500">International Journal on Emerging Technologies, 2019</p>
+</article>
+<article class="border-b border-[var(--c-dark-grey)] pb-4">
+    <h3 class="text-2xl font-bold hover:text-[var(--c-accent)] cursor-pointer">Factors influencing 'glass ceiling' theory on female administrative people in Malaysia</h3>
+    <p class="text-sm text-gray-500">International Journal on Emerging Technologies, 2019</p>
+</article>
+<article class="border-b border-[var(--c-dark-grey)] pb-4">
+    <h3 class="text-2xl font-bold hover:text-[var(--c-accent)] cursor-pointer">Factors Influencing Glass Ceiling: Focus on Women Administration in Higher Education in Malaysia</h3>
+    <p class="text-sm text-gray-500">The Economics of Talent Management and Human Capital, 2025</p>
+</article>
+<a href="publication.html" class="mt-8 inline-block text-[var(--c-accent)] font-semibold force-underline">
+    VIEW ALL PUBLICATIONS (50+) &rarr;
+</a>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. R&D MANAGEMENT SECTION (Two Parts, Scrolling Details) -->
+        <section id="rnd-management" class="content-container border-t border-[var(--c-dark-grey)] bg-[var(--c-dark-grey)]">
+            <h2 class="text-6xl font-extrabold mb-12 border-b border-black pb-4">PROJECTS</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left: Static Description -->
+                <div>
+                    <p class="text-xl leading-relaxed text-gray-300 mb-6">
+                        I guide interdisciplinary teams in the practical application of cutting-edge research, converting abstract theory into functional, scalable products. My focus is on robust process design and clear goal orchestration, with a special emphasis on Talent Economy, Generative AI, and National Innovation.
+                    </p>
+                    <a href="contact.html" class="inline-block py-3 px-6 border border-[var(--c-accent)] text-[var(--c-accent)] font-semibold uppercase tracking-wider hover:bg-[var(--c-accent)] hover:text-black transition duration-300">
+                        GET CONSULTATION &rarr;
+                    </a>
+                </div>
+
+                <!-- Right: Scrolling Detail List -->
+                <div class="scrolling-list-container h-[250px] bg-black/50">
+                    <ul class="scrolling-list space-y-3 p-4 text-sm text-gray-400 font-mono">
+                        <!-- Duplicate content for smooth looping -->
+                        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[Talent Economy]</span> Wisdom-Led Ecosystem Model
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q3-2024:</strong> Architecture finalization.
+            </p>
+        </li>
+
+        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[National Innovation]</span> Generative AI &amp; Tokenization Framework
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q4-2024:</strong> Alpha testing phase completion.
+            </p>
+        </li>
+
+        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[AI in Business]</span> E-Commerce User Behavior Classification System
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q1-2025:</strong> Team expansion initiation.
+            </p>
+        </li>
+
+        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[Climate Finance]</span> Blockchain-Based Islamic Finance for Climate Action
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q2-2025:</strong> Feasibility study conclusion.
+            </p>
+        </li>
+
+        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[Defense &amp; Tech]</span> Drone Innovation Roadmap for Defense
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q3-2025:</strong> Proof-of-concept development.
+            </p>
+        </li>
+
+        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[Urban Planning]</span> Case Study: Milestone School Tragedy &amp; Safety Planning
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q4-2025:</strong> Detailed chronology and policy review.
+            </p>
+        </li>
+
+        <li class="p-4 bg-zinc-700 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+            <p class="font-semibold text-lg text-[var(--c-accent)] md:w-2/3">
+                <span class="text-gray-400 mr-2">[Jute Geotextiles]</span> River Bank Protection Technology
+            </p>
+            <p class="text-sm md:w-1/3 md:text-right mt-1 md:mt-0">
+                <strong class="text-white">Q2-2026:</strong> Core algorithm patent filed.
+            </p>
+        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- 7. FULL WIDTH IMAGE SECTION (Placeholder) -->
+        <section id="full-width-image" class="w-full bg-zinc-900 border-t border-b border-black">
+            <div class="h-66 w-full flex items-center justify-center text-gray-500 text-3xl font-bold">
+                <img src="rana-massive.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- 8. ORTESTIFY SECTION (Card Designs) -->
+        <section id="ortestify" class="content-container pt-20 pb-20">
+            <h2 class="text-6xl font-extrabold mb-12 border-b border-[var(--c-dark-grey)] pb-4">EVENTS</h2>
+            <p class="text-xl leading-relaxed text-gray-300 mb-12 max-w-4xl">
+                Founder & Head of the World Talent Economy Forum (WTEF), driving groundbreaking research on AI, talent development, and economic innovation.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+    <!-- Card 1 -->
+    <div class="p-10 bg-[var(--c-dark-grey)] border-t-8 border-[var(--c-accent)] transition duration-300">
+        <h3 class="text-2xl font-bold text-white mb-3 flex items-center">
+            <!-- Icon for Global/Leadership -->
+            <svg class="w-12 h-25 mr-3 text-[var(--c-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            WORLD TALENT ECONOMY FORUM (WTEF) LEADERSHIP
+        </h3>
+        <p class="text-gray-300 mb-4">
+            Launch of the South Asia Center of Excellence. As President, Dr. Rana spearheads WTEF's global mission to foster innovation, entrepreneurship, and leadership development, establishing a critical hub to accelerate sustainable economic growth, particularly in the Age of AI.
+        </p>
+       <a href="event.html" class=" mt-6 inline-block py-3 px-6 border border-white text-white font-semibold uppercase tracking-wider hover:bg-[var(--c-accent)] hover:text-black transition duration-300">
+    Learn More &rarr;
+</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="p-10 bg-[var(--c-dark-grey)] border-t-8 border-[var(--c-accent)] transition duration-300">
+        <h3 class="text-2xl font-bold text-white mb-3 flex items-center">
+            <!-- Icon for Research/Publication -->
+            <svg class="w-12 h-25 mr-3 text-[var(--c-accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13M18.673 21.066L12 18l-6.673 3.066M12 6.253c-1.897 0-3.693.682-5.118 1.933a6.47 6.47 0 000 8.751 6.47 6.47 0 005.118 1.933M12 6.253a6.47 6.47 0 015.118 1.933 6.47 6.47 0 010 8.751 6.47 6.47 0 01-5.118 1.933"></path></svg>
+            PIONEERING RESEARCH &amp; PUBLICATION
+        </h3>
+        <p class="text-gray-300 mb-4">
+            Chief Editor of 'The Economics of Talent Management and Human Capital'. This landmark book and associated research establish new frameworks for understanding how Artificial Intelligence is reshaping the global workforce and talent economy, driving ethical and sustainable economic models.
+        </p>
+        <a href="#" class=" mt-6 inline-block py-3 px-6 border border-white text-white font-semibold uppercase tracking-wider hover:bg-[var(--c-accent)] hover:text-black transition duration-300">
+    Learn More &rarr;
+</a>
+    </div>
+</div>
+
+        </section>
+
+        <section class="mt-0 text-center">
+        <a href="#" class="inline-block py-3 px-6 border border-[var(--c-accent)] text-[var(--c-accent)] font-semibold uppercase tracking-wider rounded-lg hover:bg-[var(--c-accent)] hover:text-black transition duration-300">
+            More groundbreaking events and achievements &rarr;
+        </a>
+    </section>
+
+        <!-- 9. CONTACT SECTION -->
+       <!-- <section id="contact" class="content-container border-t border-b border-[var(--c-dark-grey)] bg-[var(--c-lighter-bg)]">
+            <h2 class="text-6xl font-extrabold mb-12 border-b border-black pb-4">CONTACT</h2>
+            
+            <p class="text-xl text-gray-300 mb-12 max-w-3xl">
+                Let's discuss future collaborations, research opportunities, or speaking engagements. I aim to respond to all inquiries within 48 hours.
+            </p>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details Column (4/12 width on large screens) -->
+                
+
+                    <!-- Email -->
+                    
+
+                    <!-- Call -->
+                    
+
+                    </div>
+                </div>
+
+              
+            </div>
+        </section> 
+        <section id="contact" class="content-container border-t border-b border-[var(--c-dark-grey)] bg-[var(--c-lighter-bg)]">
+    <h2 class="text-6xl font-extrabold mb-12 border-b border-black pb-4">CONTACT</h2>
+    
+    <p class="text-xl text-gray-300 mb-12 max-w-3xl">
+        Let's discuss future collaborations, research opportunities, or speaking engagements. I aim to respond to all inquiries within 48 hours.
+    </p>
+
+    <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Details Column -->
+        <div class="lg:col-span-4 space-y-8">
+            
+    <!-- Location -->
+    <div class="flex items-start space-x-4 group">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-700 group-hover:bg-[var(--c-accent)] flex items-center justify-center text-black transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-gray-400 group-hover:text-black transition duration-300"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+            <h4 class="text-2xl font-bold text-white mb-1">Location:</h4>
+            <p class="text-gray-400">Santa Cruz, California, USA / Subang Jaya, Malaysia</p>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-start space-x-4 group">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-700 group-hover:bg-[var(--c-accent)] flex items-center justify-center text-black transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-gray-400 group-hover:text-black transition duration-300"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div>
+            <h4 class="text-2xl font-bold text-white mb-1">Email:</h4>
+            <a href="mailto:suahmedrana@gmail.com" class="text-[var(--c-accent)] hover:text-white transition duration-300">suahmedrana@gmail.com</a><br>
+            <a href="mailto:presidentwteforum@gmail.com" class="text-[var(--c-accent)] hover:text-white transition duration-300">presidentwteforum@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Call -->
+    <div class="flex items-start space-x-4 group">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-700 group-hover:bg-[var(--c-accent)] flex items-center justify-center text-black transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-gray-400 group-hover:text-black transition duration-300"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+            <h4 class="text-2xl font-bold text-white mb-1">Call:</h4>
+            <p class="text-gray-400">+1 669 265-9671 (USA)<br>+880 1814 692153 (Bangladesh)<br>+60 173 489 486 (Malaysia)</p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Contact Form Column -->
+         <div class="lg:col-span-8 p-8 bg-black border-2 border-dashed border-[var(--c-accent)] rounded-xl shadow-2xl ">
+
+    <form action="#" method="POST" class="space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+            <input type="text" placeholder="Your Name" required class="w-full p-4 bg-[var(--c-dark-grey)] border border-transparent focus:outline-none focus:ring-2 focus:ring-[var(--c-accent)] rounded-lg text-white placeholder-gray-500 transition duration-300">
+            <input type="email" placeholder="Your Email" required class="w-full p-4 bg-[var(--c-dark-grey)] border border-transparent focus:outline-none focus:ring-2 focus:ring-[var(--c-accent)] rounded-lg text-white placeholder-gray-500 transition duration-300">
+        </div>
+        
+        <input type="text" placeholder="Subject" required class="w-full p-4 bg-[var(--c-dark-grey)] border border-transparent focus:outline-none focus:ring-2 focus:ring-[var(--c-accent)] rounded-lg text-white placeholder-gray-500 transition duration-300">
+
+        <textarea placeholder="Message" rows="6" required class="w-full p-4 bg-[var(--c-dark-grey)] border border-transparent focus:outline-none focus:ring-2 focus:ring-[var(--c-accent)] rounded-lg text-white placeholder-gray-500 transition duration-300 resize-none"></textarea>
+
+        <div class="text-center pt-4 space-y-4">
+          <button type="submit" class="w-full py-3 px-8 bg-[var(--c-accent)] text-white font-semibold uppercase tracking-wider rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(255,102,0,0.6)] transition duration-300">
+    Send Message
+</button>
+            <p class="text-sm text-gray-500">
+                Or, if you prefer,  
+                <a href="mailto:orestis.georgiou@domain.com" class="font-semibold text-[var(--c-accent)] hover:text-white transition duration-300 border-b border-transparent hover:border-white">
+                      EMAIL ME DIRECTLY &rarr;
+                </a>
+            </p>
+        </div>
+    </form>
+
+</div>
+
+          
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- 10. FOOTER (Detailed Structure) -->
+
+   
+
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <a href="#" class="flex items-center">
+            <img 
+                src="logo.png" 
+                alt="Dr. Sharif Uddin Ahmed Rana Logo" 
+                class="w-[150px] h-[64px]" 
+                />
+            <span style="color: var(--c-accent);" class="text-3xl font-extrabold tracking-tighter"></span>
+        </a> <br>
+                                
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">More Details</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="project.html">Projects</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="event.html">Event</a></li>
+                                    <li><a href="publication.html">Publications</a></li>
+                                    <li><a href="publication.html">Books</a></li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term &amp; conditions</a></li>
+                                    <li><a href="#">Reporting</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Reach Out</h3>
+                                <div class="f_social_icon">
+    
+
+    <a href="#" class="icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+    <a href="#" class="icon">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© 2025 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made by team Basilisk Fangs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  <script src="JS/nav.js"></script>
+    <!-- JavaScript for Dynamic UI -->
+    <script  src="JS/script.js"> </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
     <script src="css_m/nav.js"></script>
 
   <section id="hero" class="hero py-20" style="padding-top: 140px; position: relative;">
